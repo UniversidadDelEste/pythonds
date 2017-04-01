@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/index.rst:6
+msgid ""
+"An interactive version of Problem Solving with Algorithms and Data "
+"Structures using Python."
+msgstr ""
+
+#: ../../_sources/index.rst:6
+msgid "python, data structures, computer science"
+msgstr ""
+
+#: ../../_sources/index.rst:14
+msgid "Problem Solving with Algorithms and Data Structures using Python"
+msgstr ""
+
+msgid ""
+".. image:: _static/PythonDScover.jpg\n"
+"   :alt: PythonDS Cover"
+msgstr ""
+
+#: ../../_sources/index.rst:19
+msgid "By Brad Miller and David Ranum, Luther College"
+msgstr ""
+
+#: ../../_sources/index.rst:21
+msgid ""
+"<ul>\n"
+"<li><a href=\"assignments.html\">Assignments</a></li>\n"
+"</ul>"
+msgstr ""
+
+#: ../../_sources/index.rst:40
+msgid "Acknowledgements"
+msgstr ""
+
+#: ../../_sources/index.rst:42
+msgid ""
+"We are very grateful to Franklin Beedle Publishers for allowing us to "
+"make this interactive textbook freely available. This online version is "
+"dedicated to the memory of our first editor, Jim Leisy, who wanted us to "
+"\"change the world.\""
+msgstr ""
+
+#: ../../_sources/index.rst:48
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../_sources/index.rst:50
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../_sources/index.rst:51
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../_sources/index.rst:52
+msgid ":ref:`search`"
+msgstr ""
+
+#: ../../_sources/index.rst:55
+msgid ""
+"<div style=\"width: 500px; margin-left: auto; margin-right: auto;\"><a "
+"rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-"
+"sa/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0; "
+"display:block; margin-left: auto; margin-right:auto;\" "
+"src=\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /></a><br "
+"/><span xmlns:dct=\"http://purl.org/dc/terms/\" "
+"href=\"http://purl.org/dc/dcmitype/InteractiveResource\" "
+"property=\"dct:title\" rel=\"dct:type\">Problem Solving with Algorithms "
+"and Data Structures using Python</span> by <span "
+"xmlns:cc=\"http://creativecommons.org/ns#\" "
+"property=\"cc:attributionName\">Bradley N. Miller, David L. Ranum</span> "
+"is licensed under a <a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative "
+"Commons Attribution-NonCommercial-ShareAlike 4.0 International "
+"License</a>.</div>"
+msgstr ""
+

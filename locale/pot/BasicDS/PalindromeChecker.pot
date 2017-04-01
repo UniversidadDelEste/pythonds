@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:6
+msgid "Palindrome-Checker"
+msgstr ""
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:8
+msgid "An interesting problem that can be easily solved using the deque data structure is the classic palindrome problem. A **palindrome** is a string that reads the same forward and backward, for example, *radar*, *toot*, and *madam*. We would like to construct an algorithm to input a string of characters and check whether it is a palindrome."
+msgstr ""
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:14
+msgid "The solution to this problem will use a deque to store the characters of the string. We will process the string from left to right and add each character to the rear of the deque. At this point, the deque will be acting very much like an ordinary queue. However, we can now make use of the dual functionality of the deque. The front of the deque will hold the first character of the string and the rear of the deque will hold the last character (see :ref:`Figure 2 <fig_palindrome>`)."
+msgstr ""
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:27
+msgid ".. image:: BasicDS/Figures/palindromesetup.png"
+msgstr ""
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:27
+msgid "Figure 2: A Deque"
+msgstr ""
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:30
+msgid "Since we can remove both of them directly, we can compare them and continue only if they match. If we can keep matching first and the last items, we will eventually either run out of characters or be left with a deque of size 1 depending on whether the length of the original string was even or odd. In either case, the string must be a palindrome. The complete function for palindrome-checking appears in :ref:`ActiveCode 1 <lst_palchecker>`."
+msgstr ""
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:63
+msgid "data-caption='A Palindrome Checker Using Deque'"
+msgstr ""
+
+#: ../../_sources/BasicDS/PalindromeChecker.rst:63
+msgid "from pythonds.basic.deque import Deque\n"
+"\n"
+"def palchecker(aString):\n"
+"    chardeque = Deque()\n"
+"\n"
+"    for ch in aString:\n"
+"        chardeque.addRear(ch)\n"
+"\n"
+"    stillEqual = True\n"
+"\n"
+"    while chardeque.size() > 1 and stillEqual:\n"
+"        first = chardeque.removeFront()\n"
+"        last = chardeque.removeRear()\n"
+"        if first != last:\n"
+"            stillEqual = False\n"
+"\n"
+"    return stillEqual\n"
+"\n"
+"print(palchecker(\"lsdkjfskf\"))\n"
+"print(palchecker(\"radar\"))"
+msgstr ""
+

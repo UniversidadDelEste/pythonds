@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:6
+msgid "Programming Exercises"
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:8
+msgid ""
+"Set up a random experiment to test the difference between a sequential "
+"search and a binary search on a list of integers."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:11
+msgid ""
+"Use the binary search functions given in the text (recursive and "
+"iterative). Generate a random, ordered list of integers and do a "
+"benchmark analysis for each one. What are your results? Can you explain "
+"them?"
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:16
+msgid ""
+"Implement the binary search using recursion without the slice operator. "
+"Recall that you will need to pass the list along with the starting and "
+"ending index values for the sublist. Generate a random, ordered list of "
+"integers and do a benchmark analysis."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:21
+msgid ""
+"Implement the ``len`` method (\\_\\_len\\_\\_) for the hash table Map ADT"
+" implementation."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:24
+msgid ""
+"Implement the ``in`` method (\\_\\_contains\\_\\_) for the hash table Map"
+" ADT implementation."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:27
+msgid ""
+"How can you delete items from a hash table that uses chaining for "
+"collision resolution? How about if open addressing is used? What are the "
+"special circumstances that must be handled? Implement the ``del`` method "
+"for the ``HashTable`` class."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:32
+msgid ""
+"In the hash table map implementation, the hash table size was chosen to "
+"be 101. If the table gets full, this needs to be increased. Re-implement "
+"the ``put`` method so that the table will automatically resize itself "
+"when the loading factor reaches a predetermined value (you can decide the"
+" value based on your assessment of load versus performance)."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:39
+msgid "Implement quadratic probing as a rehash technique."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:41
+msgid ""
+"Using a random number generator, create a list of 500 integers. Perform a"
+" benchmark analysis using some of the sorting algorithms from this "
+"chapter. What is the difference in execution speed?"
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:45
+msgid "Implement the bubble sort using simultaneous assignment."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:47
+msgid ""
+"A bubble sort can be modified to “bubble” in both directions. The first "
+"pass moves “up” the list, and the second pass moves “down.” This "
+"alternating pattern continues until no more passes are necessary. "
+"Implement this variation and describe under what circumstances it might "
+"be appropriate."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:53
+msgid "Implement the selection sort using simultaneous assignment."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:55
+msgid ""
+"Perform a benchmark analysis for a shell sort, using different increment "
+"sets on the same list."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:58
+msgid "Implement the ``mergeSort`` function without using the slice operator."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:61
+msgid ""
+"One way to improve the quick sort is to use an insertion sort on lists "
+"that have a small length (call it the “partition limit”). Why does this "
+"make sense? Re-implement the quick sort and use it to sort a random list "
+"of integers. Perform an analysis using different list sizes for the "
+"partition limit."
+msgstr ""
+
+#: ../../_sources/SortSearch/ProgrammingExercises.rst:67
+msgid ""
+"Implement the median-of-three method for selecting a pivot value as a "
+"modification to ``quickSort``. Run an experiment to compare the two "
+"techniques."
+msgstr ""
+

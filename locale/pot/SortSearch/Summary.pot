@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/SortSearch/Summary.rst:6
+msgid "Summary"
+msgstr ""
+
+#: ../../_sources/SortSearch/Summary.rst:8
+msgid "A sequential search is :math:`O(n)` for ordered and unordered lists."
+msgstr ""
+
+#: ../../_sources/SortSearch/Summary.rst:11
+msgid "A binary search of an ordered list is :math:`O(\\log n)` in the worst case."
+msgstr ""
+
+#: ../../_sources/SortSearch/Summary.rst:14
+msgid "Hash tables can provide constant time searching."
+msgstr ""
+
+#: ../../_sources/SortSearch/Summary.rst:16
+msgid "A bubble sort, a selection sort, and an insertion sort are :math:`O(n^{2})` algorithms."
+msgstr ""
+
+#: ../../_sources/SortSearch/Summary.rst:19
+msgid "A shell sort improves on the insertion sort by sorting incremental sublists. It falls between :math:`O(n)` and :math:`O(n^{2})`."
+msgstr ""
+
+#: ../../_sources/SortSearch/Summary.rst:22
+msgid "A merge sort is :math:`O(n \\log n)`, but requires additional space for the merging process."
+msgstr ""
+
+#: ../../_sources/SortSearch/Summary.rst:25
+msgid "A quick sort is :math:`O(n \\log n)`, but may degrade to :math:`O(n^{2})` if the split points are not near the middle of the list. It does not require additional space."
+msgstr ""
+

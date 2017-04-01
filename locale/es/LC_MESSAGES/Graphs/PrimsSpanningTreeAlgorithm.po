@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:6
+msgid "Prim’s Spanning Tree Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:8
+msgid ""
+"For our last graph algorithm let’s consider a problem that online game "
+"designers and Internet radio providers face. The problem is that they "
+"want to efficiently transfer a piece of information to anyone and "
+"everyone who may be listening. This is important in gaming so that all "
+"the players know the very latest position of every other player. This is "
+"important for Internet radio so that all the listeners that are tuned in "
+"are getting all the data they need to reconstruct the song they are "
+"listening to. :ref:`Figure 9 <fig_bcast1>` illustrates the broadcast "
+"problem."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:22
+msgid ".. image:: Graphs/Figures/bcast1.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:22
+msgid "Figure 9: The Broadcast Problem"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:24
+msgid ""
+"There are some brute force solutions to this problem, so let’s look at "
+"them first to help understand the broadcast problem better. This will "
+"also help you appreciate the solution that we will propose when we are "
+"done. To begin, the broadcast host has some information that the "
+"listeners all need to receive. The simplest solution is for the "
+"broadcasting host to keep a list of all of the listeners and send "
+"individual messages to each. In :ref:`Figure 9 <fig_bcast1>` we show a "
+"small network with a broadcaster and some listeners. Using this first "
+"approach, four copies of every message would be sent. Assuming that the "
+"least cost path is used, let’s see how many times each router would "
+"handle the same message."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:36
+msgid ""
+"All messages from the broadcaster go through router A, so A sees all four"
+" copies of every message. Router C sees only one copy of each message for"
+" its listener. However, routers B and D would see three copies of every "
+"message since routers B and D are on the cheapest path for listeners 1, "
+"2, and 3. When you consider that the broadcast host must send hundreds of"
+" messages each second for a radio broadcast, that is a lot of extra "
+"traffic."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:44
+msgid ""
+"A brute force solution is for the broadcast host to send a single copy of"
+" the broadcast message and let the routers sort things out. In this case,"
+" the easiest solution is a strategy called **uncontrolled flooding**. The"
+" flooding strategy works as follows. Each message starts with a time to "
+"live (``ttl``) value set to some number greater than or equal to the "
+"number of edges between the broadcast host and its most distant listener."
+" Each router gets a copy of the message and passes the message on to "
+"*all* of its neighboring routers. When the message is passed on the "
+"``ttl`` is decreased. Each router continues to send copies of the message"
+" to all its neighbors until the ``ttl`` value reaches 0. It is easy to "
+"convince yourself that uncontrolled flooding generates many more "
+"unnecessary messages than our first strategy."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:57
+msgid ""
+"The solution to this problem lies in the construction of a minimum weight"
+" **spanning tree**. Formally we define the minimum spanning tree "
+":math:`T` for a graph :math:`G = (V,E)` as follows. :math:`T` is an "
+"acyclic subset of :math:`E` that connects all the vertices in :math:`V`. "
+"The sum of the weights of the edges in T is minimized."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:63
+msgid ""
+":ref:`Figure 10 <fig_mst1>` shows a simplified version of the broadcast "
+"graph and highlights the edges that form a minimum spanning tree for the "
+"graph. Now to solve our broadcast problem, the broadcast host simply "
+"sends a single copy of the broadcast message into the network. Each "
+"router forwards the message to any neighbor that is part of the spanning "
+"tree, excluding the neighbor that just sent it the message. In this "
+"example A forwards the message to B. B forwards the message to D and C. D"
+" forwards the message to E, which forwards it to F, which forwards it to "
+"G. No router sees more than one copy of any message, and all the "
+"listeners that are interested see a copy of the message."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:79
+msgid ".. image:: Graphs/Figures/mst1.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:79
+msgid "Figure 10: Minimum Spanning Tree for the Broadcast Graph"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:81
+msgid ""
+"The algorithm we will use to solve this problem is called Prim’s "
+"algorithm. Prim’s algorithm belongs to a family of algorithms called the "
+"“greedy algorithms” because at each step we will choose the cheapest next"
+" step. In this case the cheapest next step is to follow the edge with the"
+" lowest weight. Our last step is to develop Prim’s algorithm."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:87
+msgid "The basic idea in constructing a spanning tree is as follows:"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:91
+msgid ""
+"While T is not yet a spanning tree\n"
+"   Find an edge that is safe to add to the tree\n"
+"   Add the new edge to T"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:95
+msgid ""
+"The trick is in the step that directs us to “find an edge that is safe.” "
+"We define a safe edge as any edge that connects a vertex that is in the "
+"spanning tree to a vertex that is not in the spanning tree. This ensures "
+"that the tree will always remain a tree and therefore have no cycles."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:100
+msgid ""
+"The Python code to implement Prim’s algorithm is shown in :ref:`Listing 2"
+" <lst_prims>`. Prim’s algorithm is similar to Dijkstra’s algorithm in "
+"that they both use a priority queue to select the next vertex to add to "
+"the growing graph."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:104
+msgid "**Listing 2**"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:110
+msgid ""
+"from pythonds.graphs import PriorityQueue, Graph, Vertex\n"
+"\n"
+"def prim(G,start):\n"
+"    pq = PriorityQueue()\n"
+"    for v in G:\n"
+"        v.setDistance(sys.maxsize)\n"
+"        v.setPred(None)\n"
+"    start.setDistance(0)\n"
+"    pq.buildHeap([(v.getDistance(),v) for v in G])\n"
+"    while not pq.isEmpty():\n"
+"        currentVert = pq.delMin()\n"
+"        for nextVert in currentVert.getConnections():\n"
+"          newCost = currentVert.getWeight(nextVert)\n"
+"          if nextVert in pq and newCost<nextVert.getDistance():\n"
+"              nextVert.setPred(currentVert)\n"
+"              nextVert.setDistance(newCost)\n"
+"              pq.decreaseKey(nextVert,newCost)"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:128
+msgid ""
+"The following sequence of figures (:ref:`Figure 11 <fig_mst1>` through "
+":ref:`Figure 17 <fig_mst1>`) shows the algorithm in operation on our "
+"sample tree. We begin with the starting vertex as A. The distances to all"
+" the other vertices are initialized to infinity. Looking at the neighbors"
+" of A we can update distances to two of the additional vertices B and C "
+"because the distances to B and C through A are less than infinite. This "
+"moves B and C to the front of the priority queue. Update the predecessor "
+"links for B and C by setting them to point to A. It is important to note "
+"that we have not formally added B or C to the spanning tree yet. A node "
+"is not considered to be part of the spanning tree until it is removed "
+"from the priority queue."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:139
+msgid ""
+"Since B has the smallest distance we look at B next. Examining B’s "
+"neighbors we see that D and E can be updated. Both D and E get new "
+"distance values and their predecessor links are updated. Moving on to the"
+" next node in the priority queue we find C. The only node C is adjacent "
+"to that is still in the priority queue is F, thus we can update the "
+"distance to F and adjust F’s position in the priority queue."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:146
+msgid ""
+"Now we examine the vertices adjacent to node D. We find that we can "
+"update E and reduce the distance to E from 6 to 4. When we do this we "
+"change the predecessor link on E to point back to D, thus preparing it to"
+" be grafted into the spanning tree but in a different location. The rest "
+"of the algorithm proceeds as you would expect, adding each new node to "
+"the tree."
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:158
+msgid ".. image:: Graphs/Figures/prima.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:158
+msgid "Figure 11: Tracing Prim’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:165
+msgid ".. image:: Graphs/Figures/primb.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:165
+msgid "Figure 12: Tracing Prim’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:172
+msgid ".. image:: Graphs/Figures/primc.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:172
+msgid "Figure 13: Tracing Prim’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:179
+msgid ".. image:: Graphs/Figures/primd.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:179
+msgid "Figure 14: Tracing Prim’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:186
+msgid ".. image:: Graphs/Figures/prime.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:186
+msgid "Figure 15: Tracing Prim’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:193
+msgid ".. image:: Graphs/Figures/primf.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:193
+msgid "Figure 16: Tracing Prim’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:200
+msgid ".. image:: Graphs/Figures/primg.png"
+msgstr ""
+
+#: ../../_sources/Graphs/PrimsSpanningTreeAlgorithm.rst:200
+msgid "Figure 17: Tracing Prim’s Algorithm"
+msgstr ""
+

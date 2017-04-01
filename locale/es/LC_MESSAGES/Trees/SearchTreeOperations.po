@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:6
+msgid "Search Tree Operations"
+msgstr ""
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:8
+msgid ""
+"Before we look at the implementation, let’s review the interface provided"
+" by the map ADT. You will notice that this interface is very similar to "
+"the Python dictionary."
+msgstr ""
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:12
+msgid "``Map()`` Create a new, empty map."
+msgstr ""
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:14
+msgid ""
+"``put(key,val)`` Add a new key-value pair to the map. If the key is "
+"already in the map then replace the old value with the new value."
+msgstr ""
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:17
+msgid ""
+"``get(key)`` Given a key, return the value stored in the map or ``None`` "
+"otherwise."
+msgstr ""
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:20
+msgid ""
+"``del`` Delete the key-value pair from the map using a statement of the "
+"form ``del map[key]``."
+msgstr ""
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:23
+msgid "``len()`` Return the number of key-value pairs stored in the map."
+msgstr ""
+
+#: ../../_sources/Trees/SearchTreeOperations.rst:25
+msgid ""
+"``in`` Return ``True`` for a statement of the form ``key in map``, if the"
+" given key is in the map."
+msgstr ""
+

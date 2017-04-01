@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Trees/NodesandReferences.rst:6
+msgid "Nodes and References"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:8
+msgid "Our second method to represent a tree uses nodes and references. In this case we will define a class that has attributes for the root value, as well as the left and right subtrees. Since this representation more closely follows the object-oriented programming paradigm, we will continue to use this representation for the remainder of the chapter."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:14
+msgid "Using nodes and references, we might think of the tree as being structured like the one shown in :ref:`Figure 2 <fig_treerec>`."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:23
+msgid ".. image:: Trees/Figures/treerecs.png\n"
+"   :alt: image"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:23
+msgid "Figure 2: A Simple Tree Using a Nodes and References Approach"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:25
+msgid "We will start out with a simple class definition for the nodes and references approach as shown in :ref:`Listing 4 <lst_nar>`. The important thing to remember about this representation is that the attributes ``left`` and ``right`` will become references to other instances of the ``BinaryTree`` class. For example, when we insert a new left child into the tree we create another instance of ``BinaryTree`` and modify ``self.leftChild`` in the root to reference the new tree."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:35
+msgid "**Listing 4**"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:39
+msgid "class BinaryTree:\n"
+"    def __init__(self,rootObj):\n"
+"        self.key = rootObj\n"
+"        self.leftChild = None\n"
+"        self.rightChild = None"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:46
+msgid "Notice that in :ref:`Listing 4 <lst_nar>`, the constructor function expects to get some kind of object to store in the root. Just like you can store any object you like in a list, the root object of a tree can be a reference to any object. For our early examples, we will store the name of the node as the root value. Using nodes and references to represent the tree in :ref:`Figure 2 <fig_treerec>`, we would create six instances of the BinaryTree class."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:54
+msgid "Next let’s look at the functions we need to build the tree beyond the root node. To add a left child to the tree, we will create a new binary tree object and set the ``left`` attribute of the root to refer to this new object. The code for ``insertLeft`` is shown in :ref:`Listing 5 <lst_insl>`."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:62
+msgid "**Listing 5**"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:69
+msgid "def insertLeft(self,newNode):\n"
+"    if self.leftChild == None:\n"
+"        self.leftChild = BinaryTree(newNode)\n"
+"    else:\n"
+"        t = BinaryTree(newNode)\n"
+"        t.leftChild = self.leftChild\n"
+"        self.leftChild = t"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:80
+msgid "We must consider two cases for insertion. The first case is characterized by a node with no existing left child. When there is no left child, simply add a node to the tree. The second case is characterized by a node with an existing left child. In the second case, we insert a node and push the existing child down one level in the tree. The second case is handled by the ``else`` statement on line 4 of :ref:`Listing 5 <lst_insl>`."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:88
+msgid "The code for ``insertRight`` must consider a symmetric set of cases. There will either be no right child, or we must insert the node between the root and an existing right child. The insertion code is shown in :ref:`Listing 6 <lst_insr>`."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:95
+msgid "**Listing 6**"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:99
+msgid "def insertRight(self,newNode):\n"
+"    if self.rightChild == None:\n"
+"        self.rightChild = BinaryTree(newNode)\n"
+"    else:\n"
+"        t = BinaryTree(newNode)\n"
+"        t.rightChild = self.rightChild\n"
+"        self.rightChild = t"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:107
+msgid "To round out the definition for a simple binary tree data structure, we will write accessor methods (see :ref:`Listing 7 <lst_naracc>`) for the left and right children, as well as the root values."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:113
+msgid "**Listing 7**"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:117
+msgid "def getRightChild(self):\n"
+"    return self.rightChild\n"
+"\n"
+"def getLeftChild(self):\n"
+"    return self.leftChild\n"
+"\n"
+"def setRootVal(self,obj):\n"
+"    self.key = obj\n"
+"\n"
+"def getRootVal(self):\n"
+"    return self.key"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:130
+msgid "Now that we have all the pieces to create and manipulate a binary tree, let’s use them to check on the structure a bit more. Let’s make a simple tree with node a as the root, and add nodes b and c as children. :ref:`ActiveCode 1 <lst_comptest>` creates the tree and looks at the some of the values stored in ``key``, ``left``, and ``right``. Notice that both the left and right children of the root are themselves distinct instances of the ``BinaryTree`` class. As we said in our original recursive definition for a tree, this allows us to treat any child of a binary tree as a binary tree itself."
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:195
+msgid "data-caption='Exercising the Node and Reference Implementation'"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:195
+msgid "class BinaryTree:\n"
+"    def __init__(self,rootObj):\n"
+"        self.key = rootObj\n"
+"        self.leftChild = None\n"
+"        self.rightChild = None\n"
+"\n"
+"    def insertLeft(self,newNode):\n"
+"        if self.leftChild == None:\n"
+"            self.leftChild = BinaryTree(newNode)\n"
+"        else:\n"
+"            t = BinaryTree(newNode)\n"
+"            t.leftChild = self.leftChild\n"
+"            self.leftChild = t\n"
+"\n"
+"    def insertRight(self,newNode):\n"
+"        if self.rightChild == None:\n"
+"            self.rightChild = BinaryTree(newNode)\n"
+"        else:\n"
+"            t = BinaryTree(newNode)\n"
+"            t.rightChild = self.rightChild\n"
+"            self.rightChild = t\n"
+"\n"
+"\n"
+"    def getRightChild(self):\n"
+"        return self.rightChild\n"
+"\n"
+"    def getLeftChild(self):\n"
+"        return self.leftChild\n"
+"\n"
+"    def setRootVal(self,obj):\n"
+"        self.key = obj\n"
+"\n"
+"    def getRootVal(self):\n"
+"        return self.key\n"
+"\n"
+"\n"
+"r = BinaryTree('a')\n"
+"print(r.getRootVal())\n"
+"print(r.getLeftChild())\n"
+"r.insertLeft('b')\n"
+"print(r.getLeftChild())\n"
+"print(r.getLeftChild().getRootVal())\n"
+"r.insertRight('c')\n"
+"print(r.getRightChild())\n"
+"print(r.getRightChild().getRootVal())\n"
+"r.getRightChild().setRootVal('hello')\n"
+"print(r.getRightChild().getRootVal())"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:196
+msgid "Self Check"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:214
+msgid ""
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:214
+msgid "from test import testEqual\n"
+"\n"
+"def buildTree():\n"
+"    pass\n"
+"\n"
+"ttree = buildTree()\n"
+"\n"
+"testEqual(ttree.getRightChild().getRootVal(),'c')\n"
+"testEqual(ttree.getLeftChild().getRightChild().getRootVal(),'d')\n"
+"testEqual(ttree.getRightChild().getLeftChild().getRootVal(),'e')"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:201
+msgid "Write a function ``buildTree`` that returns a tree using the nodes and references implementation that looks like this:"
+msgstr ""
+
+#: ../../_sources/Trees/NodesandReferences.rst:214
+msgid ".. image:: Trees/Figures/tree_ex.png"
+msgstr ""
+

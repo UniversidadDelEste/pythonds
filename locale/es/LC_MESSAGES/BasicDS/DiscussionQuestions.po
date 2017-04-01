@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:6
+msgid "Discussion Questions"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:8
+msgid ""
+"Convert the following values to binary using “divide by 2.” Show the "
+"stack of remainders."
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:11
+msgid "17"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:13
+msgid "45"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:15
+msgid "96"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:17
+msgid "Convert the following infix expressions to prefix (use full parentheses):"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:20
+msgid "(A+B)\\*(C+D)\\*(E+F)"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:22
+msgid "A+((B+C)\\*(D+E))"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:24
+msgid "A\\*B\\*C\\*D+E+F"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:26
+msgid "Convert the above infix expressions to postfix (use full parentheses)."
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:29
+msgid ""
+"Convert the above infix expressions to postfix using the direct "
+"conversion algorithm. Show the stack as the conversion takes place."
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:32
+msgid ""
+"Evaluate the following postfix expressions. Show the stack as each "
+"operand and operator is processed."
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:35
+msgid "2 3 \\* 4 +"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:37
+msgid "1 2 + 3 + 4 + 5 +"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:39
+msgid "1 2 3 4 5 \\* + \\* +"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:41
+msgid ""
+"The alternative implementation of the ``Queue`` ADT is to use a list such"
+" that the rear of the queue is at the end of the list. What would this "
+"mean for Big-O performance?"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:45
+msgid ""
+"What is the result of carrying out both steps of the linked list ``add`` "
+"method in reverse order? What kind of reference results? What types of "
+"problems may result?"
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:49
+msgid ""
+"Explain how the linked list ``remove`` method works when the item to be "
+"removed is in the last node."
+msgstr ""
+
+#: ../../_sources/BasicDS/DiscussionQuestions.rst:52
+msgid ""
+"Explain how the ``remove`` method works when the item is in the *only* "
+"node in the linked list."
+msgstr ""
+

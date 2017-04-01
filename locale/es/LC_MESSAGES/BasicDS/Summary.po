@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/BasicDS/Summary.rst:6
+msgid "Summary"
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:8
+msgid "Linear data structures maintain their data in an ordered fashion."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:10
+msgid ""
+"Stacks are simple data structures that maintain a LIFO, last-in first-"
+"out, ordering."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:13
+msgid ""
+"The fundamental operations for a stack are ``push``, ``pop``, and "
+"``isEmpty``."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:16
+msgid ""
+"Queues are simple data structures that maintain a FIFO, first-in first-"
+"out, ordering."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:19
+msgid ""
+"The fundamental operations for a queue are ``enqueue``, ``dequeue``, and "
+"``isEmpty``."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:22
+msgid "Prefix, infix, and postfix are all ways to write expressions."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:24
+msgid ""
+"Stacks are very useful for designing algorithms to evaluate and translate"
+" expressions."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:27
+msgid "Stacks can provide a reversal characteristic."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:29
+msgid "Queues can assist in the construction of timing simulations."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:31
+msgid ""
+"Simulations use random number generators to create a real-life situation "
+"and allow us to answer “what if” types of questions."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:34
+msgid ""
+"Deques are data structures that allow hybrid behavior like that of stacks"
+" and queues."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:37
+msgid ""
+"The fundamental operations for a deque are ``addFront``, ``addRear``, "
+"``removeFront``, ``removeRear``, and ``isEmpty``."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:40
+msgid "Lists are collections of items where each item holds a relative position."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:43
+msgid ""
+"A linked list implementation maintains logical order without requiring "
+"physical storage requirements."
+msgstr ""
+
+#: ../../_sources/BasicDS/Summary.rst:46
+msgid "Modification to the head of the linked list is a special case."
+msgstr ""
+

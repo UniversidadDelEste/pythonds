@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/BasicDS/WhatAreLinearStructures.rst:6
+msgid "What Are Linear Structures?"
+msgstr ""
+
+#: ../../_sources/BasicDS/WhatAreLinearStructures.rst:8
+msgid ""
+"We will begin our study of data structures by considering four simple but"
+" very powerful concepts. Stacks, queues, deques, and lists are examples "
+"of data collections whose items are ordered depending on how they are "
+"added or removed. Once an item is added, it stays in that position "
+"relative to the other elements that came before and came after it. "
+"Collections such as these are often referred to as **linear data "
+"structures**."
+msgstr ""
+
+#: ../../_sources/BasicDS/WhatAreLinearStructures.rst:16
+msgid ""
+"Linear structures can be thought of as having two ends. Sometimes these "
+"ends are referred to as the “left” and the “right” or in some cases the "
+"“front” and the “rear.” You could also call them the “top” and the "
+"“bottom.” The names given to the ends are not significant. What "
+"distinguishes one linear structure from another is the way in which items"
+" are added and removed, in particular the location where these additions "
+"and removals occur. For example, a structure might allow new items to be "
+"added at only one end. Some structures might allow items to be removed "
+"from either end."
+msgstr ""
+
+#: ../../_sources/BasicDS/WhatAreLinearStructures.rst:26
+msgid ""
+"These variations give rise to some of the most useful data structures in "
+"computer science. They appear in many algorithms and can be used to solve"
+" a variety of important problems."
+msgstr ""
+

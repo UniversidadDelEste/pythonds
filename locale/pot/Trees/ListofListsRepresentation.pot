@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:6
+msgid "List of Lists Representation"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:8
+msgid "In a tree represented by a list of lists, we will begin with Python’s list data structure and write the functions defined above. Although writing the interface as a set of operations on a list is a bit different from the other abstract data types we have implemented, it is interesting to do so because it provides us with a simple recursive data structure that we can look at and examine directly. In a list of lists tree, we will store the value of the root node as the first element of the list. The second element of the list will itself be a list that represents the left subtree. The third element of the list will be another list that represents the right subtree. To illustrate this storage technique, let’s look at an example. :ref:`Figure 1 <fig_smalltree>` shows a simple tree and the corresponding list implementation."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:26
+msgid ".. image:: Trees/Figures/smalltree.png"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:26
+msgid "Figure 1: A Small Tree"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:30
+msgid "myTree = ['a',   #root\n"
+"      ['b',  #left subtree\n"
+"       ['d', [], []],\n"
+"       ['e', [], []] ],\n"
+"      ['c',  #right subtree\n"
+"       ['f', [], []],\n"
+"       [] ]\n"
+"     ]"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:42
+msgid "Notice that we can access subtrees of the list using standard list indexing. The root of the tree is ``myTree[0]``, the left subtree of the root is ``myTree[1]``, and the right subtree is ``myTree[2]``. :ref:`ActiveCode 1 <lst_treelist1>` illustrates creating a simple tree using a list. Once the tree is constructed, we can access the root and the left and right subtrees. One very nice property of this list of lists approach is that the structure of a list representing a subtree adheres to the structure defined for a tree; the structure itself is recursive! A subtree that has a root value and two empty lists is a leaf node. Another nice feature of the list of lists approach is that it generalizes to a tree that has many subtrees. In the case where the tree is more than a binary tree, another subtree is just another list."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:65
+msgid "data-caption='Using Indexing to Access Subtrees'"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:65
+msgid "myTree = ['a', ['b', ['d',[],[]], ['e',[],[]] ], ['c', ['f',[],[]], []] ]\n"
+"print(myTree)\n"
+"print('left subtree = ', myTree[1])\n"
+"print('root = ', myTree[0])\n"
+"print('right subtree = ', myTree[2])"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:66
+msgid "Let’s formalize this definition of the tree data structure by providing some functions that make it easy for us to use lists as trees. Note that we are not going to define a binary tree class. The functions we will write will just help us manipulate a standard list as though we are working with a tree."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:75
+msgid "def BinaryTree(r):\n"
+"    return [r, [], []]"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:78
+msgid "The ``BinaryTree`` function simply constructs a list with a root node and two empty sublists for the children. To add a left subtree to the root of a tree, we need to insert a new list into the second position of the root list. We must be careful. If the list already has something in the second position, we need to keep track of it and push it down the tree as the left child of the list we are adding. :ref:`Listing 1 <lst_linsleft>` shows the Python code for inserting a left child."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:88
+msgid "**Listing 1**"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:92
+msgid "def insertLeft(root,newBranch):\n"
+"    t = root.pop(1)\n"
+"    if len(t) > 1:\n"
+"        root.insert(1,[newBranch,t,[]])\n"
+"    else:\n"
+"        root.insert(1,[newBranch, [], []])\n"
+"    return root"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:100
+msgid "Notice that to insert a left child, we first obtain the (possibly empty) list that corresponds to the current left child. We then add the new left child, installing the old left child as the left child of the new one. This allows us to splice a new node into the tree at any position. The code for ``insertRight`` is similar to ``insertLeft`` and is shown in :ref:`Listing 2 <lst_linsright>`."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:109
+msgid "**Listing 2**"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:113
+msgid "def insertRight(root,newBranch):\n"
+"    t = root.pop(2)\n"
+"    if len(t) > 1:\n"
+"        root.insert(2,[newBranch,[],t])\n"
+"    else:\n"
+"        root.insert(2,[newBranch,[],[]])\n"
+"    return root"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:121
+msgid "To round out this set of tree-making functions(see :ref:`Listing 3 <lst_treeacc>`), let’s write a couple of access functions for getting and setting the root value, as well as getting the left or right subtrees."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:127
+msgid "**Listing 3**"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:132
+msgid "def getRootVal(root):\n"
+"    return root[0]\n"
+"\n"
+"def setRootVal(root,newVal):\n"
+"    root[0] = newVal\n"
+"\n"
+"def getLeftChild(root):\n"
+"    return root[1]\n"
+"\n"
+"def getRightChild(root):\n"
+"    return root[2]"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:144
+msgid ":ref:`ActiveCode 2 <lst_bintreetry>` exercises the tree functions we have just written. You should try it out for yourself. One of the exercises asks you to draw the tree structure resulting from this set of calls."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:200
+msgid "data-caption='A Python Session to Illustrate Basic Tree Functions'"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:200
+msgid "def BinaryTree(r):\n"
+"    return [r, [], []]\n"
+"\n"
+"def insertLeft(root,newBranch):\n"
+"    t = root.pop(1)\n"
+"    if len(t) > 1:\n"
+"        root.insert(1,[newBranch,t,[]])\n"
+"    else:\n"
+"        root.insert(1,[newBranch, [], []])\n"
+"    return root\n"
+"\n"
+"def insertRight(root,newBranch):\n"
+"    t = root.pop(2)\n"
+"    if len(t) > 1:\n"
+"        root.insert(2,[newBranch,[],t])\n"
+"    else:\n"
+"        root.insert(2,[newBranch,[],[]])\n"
+"    return root\n"
+"\n"
+"def getRootVal(root):\n"
+"    return root[0]\n"
+"\n"
+"def setRootVal(root,newVal):\n"
+"    root[0] = newVal\n"
+"\n"
+"def getLeftChild(root):\n"
+"    return root[1]\n"
+"\n"
+"def getRightChild(root):\n"
+"    return root[2]\n"
+"\n"
+"r = BinaryTree(3)\n"
+"insertLeft(r,4)\n"
+"insertLeft(r,5)\n"
+"insertRight(r,6)\n"
+"insertRight(r,7)\n"
+"l = getLeftChild(r)\n"
+"print(l)\n"
+"\n"
+"setRootVal(l,9)\n"
+"print(r)\n"
+"insertLeft(l,11)\n"
+"print(r)\n"
+"print(getRightChild(getRightChild(r)))"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:201
+msgid "Self Check"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "['a', ['b', [], []], ['c', [], ['d', [], []]]]"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "['a', ['c', [], ['d', ['e', [], []], []]], ['b', [], []]]"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "['a', ['b', [], []], ['c', [], ['d', ['e', [], []], []]]]"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "['a', ['b', [], ['d', ['e', [], []], []]], ['c', [], []]]"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "Not quite, this tree is missing the 'e' node."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "This is close, but if you carefully you will see that the left and right children of the root are swapped."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "Very good"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:225
+msgid "This is close, but the left and right child names have been swapped along with the underlying structures."
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:214
+msgid "Q-26: Given the following statments:"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:216
+msgid "x = BinaryTree('a')\n"
+"insertLeft(x,'b')\n"
+"insertRight(x,'c')\n"
+"insertRight(getRightChild(x),'d')\n"
+"insertLeft(getRightChild(getRightChild(x)),'e')"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:224
+msgid "Which of the answers is the correct representation of the tree?"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:240
+msgid ""
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:240
+msgid "from test import testEqual\n"
+"\n"
+"def buildTree():\n"
+"    pass\n"
+"\n"
+"ttree = buildTree()\n"
+"testEqual(getRootVal(getRightChild(ttree)),'c')\n"
+"testEqual(getRootVal(getRightChild(getLeftChild(ttree))),'d')\n"
+"testEqual(getRootVal(getRightChild(getRightChild(ttree))),'f')"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:228
+msgid "Write a function ``buildTree`` that returns a tree using the list of lists functions that looks like this:"
+msgstr ""
+
+#: ../../_sources/Trees/ListofListsRepresentation.rst:240
+msgid ".. image:: Trees/Figures/tree_ex.png"
+msgstr ""
+

@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:6
+msgid "Summary of Map ADT Implementations"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:9
+msgid ""
+"Over the past two chapters we have looked at several data structures that"
+" can be used to implement the map abstract data type. A binary Search on "
+"a list, a hash table, a binary search tree, and a balanced binary search "
+"tree. To conclude this section, let’s summarize the performance of each "
+"data structure for the key operations defined by the map ADT (see "
+":ref:`Table 1 <tab_compare>`)."
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:19
+msgid "**Table 1: Comparing the Performance of Different Map Implementations**"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:22
+msgid "operation"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:22
+msgid "Sorted List"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:22
+msgid "Hash Table"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:22
+msgid "Binary Search Tree"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:22
+msgid "AVL Tree"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:24
+msgid "put"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:24
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:25
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:26
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:27
+msgid ":math:`O(n)`"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:24
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:25
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:26
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:27
+msgid ":math:`O(1)`"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:24
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:25
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:26
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:27
+msgid ":math:`O(\\log_2{n})`"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:25
+msgid "get"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:26
+msgid "in"
+msgstr ""
+
+#: ../../_sources/Trees/SummaryofMapADTImplementations.rst:27
+msgid "del"
+msgstr ""
+

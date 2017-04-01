@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:6
+msgid "Exception Handling"
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:8
+msgid "There are two types of errors that typically occur when writing programs. The first, known as a syntax error, simply means that the programmer has made a mistake in the structure of a statement or expression. For example, it is incorrect to write a for statement and forget the colon."
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:16
+msgid ">>> for i in range(10)\n"
+"SyntaxError: invalid syntax (<pyshell#61>, line 1)"
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:19
+msgid "In this case, the Python interpreter has found that it cannot complete the processing of this instruction since it does not conform to the rules of the language. Syntax errors are usually more frequent when you are first learning a language."
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:24
+msgid "The other type of error, known as a logic error, denotes a situation where the program executes but gives the wrong result. This can be due to an error in the underlying algorithm or an error in your translation of that algorithm. In some cases, logic errors lead to very bad situations such as trying to divide by zero or trying to access an item in a list where the index of the item is outside the bounds of the list. In this case, the logic error leads to a runtime error that causes the program to terminate. These types of runtime errors are typically called **exceptions**."
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:34
+msgid "Most of the time, beginning programmers simply think of exceptions as fatal runtime errors that cause the end of execution. However, most programming languages provide a way to deal with these errors that will allow the programmer to have some type of intervention if they so choose. In addition, programmers can create their own exceptions if they detect a situation in the program execution that warrants it."
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:41
+msgid "When an exception occurs, we say that it has been “raised.” You can “handle” the exception that has been raised by using a ``try`` statement. For example, consider the following session that asks the user for an integer and then calls the square root function from the math library. If the user enters a value that is greater than or equal to 0, the print will show the square root. However, if the user enters a negative value, the square root function will report a ``ValueError`` exception."
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:52
+msgid ">>> anumber = int(input(\"Please enter an integer \"))\n"
+"Please enter an integer -23\n"
+">>> print(math.sqrt(anumber))\n"
+"Traceback (most recent call last):\n"
+"  File \"<pyshell#102>\", line 1, in <module>\n"
+"    print(math.sqrt(anumber))\n"
+"ValueError: math domain error\n"
+">>>"
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:61
+msgid "We can handle this exception by calling the print function from within a ``try`` block. A corresponding ``except`` block “catches” the exception and prints a message back to the user in the event that an exception occurs. For example:"
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:68
+msgid ">>> try:\n"
+"       print(math.sqrt(anumber))\n"
+"    except:\n"
+"       print(\"Bad Value for square root\")\n"
+"       print(\"Using absolute value instead\")\n"
+"       print(math.sqrt(abs(anumber)))\n"
+"\n"
+"Bad Value for square root\n"
+"Using absolute value instead\n"
+"4.79583152331\n"
+">>>"
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:80
+msgid "will catch the fact that an exception is raised by ``sqrt`` and will instead print the messages back to the user and use the absolute value to be sure that we are taking the square root of a non-negative number. This means that the program will not terminate but instead will continue on to the next statements."
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:86
+msgid "It is also possible for a programmer to cause a runtime exception by using the ``raise`` statement. For example, instead of calling the square root function with a negative number, we could have checked the value first and then raised our own exception. The code fragment below shows the result of creating a new ``RuntimeError`` exception. Note that the program would still terminate but now the exception that caused the termination is something explicitly created by the programmer."
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:96
+msgid ">>> if anumber < 0:\n"
+"...    raise RuntimeError(\"You can't use a negative number\")\n"
+"... else:\n"
+"...    print(math.sqrt(anumber))\n"
+"...\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 2, in <module>\n"
+"RuntimeError: You can't use a negative number\n"
+">>>"
+msgstr ""
+
+#: ../../_sources/Introduction/ExceptionHandling.rst:106
+msgid "There are many kinds of exceptions that can be raised in addition to the ``RuntimeError`` shown above. See the Python reference manual for a list of all the available exception types and for how to create your own."
+msgstr ""
+

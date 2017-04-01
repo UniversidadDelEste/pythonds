@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Trees/BinarySearchTrees.rst:6
+msgid "Binary Search Trees"
+msgstr ""
+
+#: ../../_sources/Trees/BinarySearchTrees.rst:8
+msgid ""
+"We have already seen two different ways to get key-value pairs in a "
+"collection. Recall that these collections implement the **map** abstract "
+"data type. The two implementations of a map ADT we discussed were binary "
+"search on a list and hash tables. In this section we will study **binary "
+"search trees** as yet another way to map from a key to a value. In this "
+"case we are not interested in the exact placement of items in the tree, "
+"but we are interested in using the binary tree structure to provide for "
+"efficient searching."
+msgstr ""
+

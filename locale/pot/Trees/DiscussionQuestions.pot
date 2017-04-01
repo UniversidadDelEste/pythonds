@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:6
+msgid "Discussion Questions"
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:8
+msgid "Draw the tree structure resulting from the following set of tree function calls:"
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:27
+msgid "Trace the algorithm for creating an expression tree for the expression :math:`(4 * 8) / 6 - 3`."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:30
+msgid "Consider the following list of integers: [1,2,3,4,5,6,7,8,9,10]. Show the binary search tree resulting from inserting the integers in the list."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:34
+msgid "Consider the following list of integers: [10,9,8,7,6,5,4,3,2,1]. Show the binary search tree resulting from inserting the integers in the list."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:38
+msgid "Generate a random list of integers. Show the binary heap tree resulting from inserting the integers on the list one at a time."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:41
+msgid "Using the list from the previous question, show the binary heap tree resulting from using the list as a parameter to the ``buildHeap`` method. Show both the tree and list form."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:45
+msgid "Draw the binary search tree that results from inserting the following keys in the order given: 68,88,61,89,94,50,4,76,66, and 82."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:48
+msgid "Generate a random list of integers. Draw the binary search tree resulting from inserting the integers on the list."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:51
+msgid "Consider the following list of integers: [1,2,3,4,5,6,7,8,9,10]. Show the binary heap resulting from inserting the integers one at a time."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:54
+msgid "Consider the following list of integers: [10,9,8,7,6,5,4,3,2,1]. Show the binary heap resulting from inserting the integers one at a time."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:57
+msgid "Consider the two different techniques we used for implementing traversals of a binary tree. Why must we check before the call to ``preorder`` when implementing as a method, whereas we could check inside the call when implementing as a function?"
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:62
+msgid "Show the function calls needed to build the following binary tree."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:None
+msgid ".. image:: Trees/Figures/exerTree.png"
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:69
+msgid "Given the following tree, perform the appropriate rotations to bring it back into balance."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:None
+msgid ".. image:: Trees/Figures/rotexer1.png"
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:76
+msgid "Using the following as a starting point, derive the equation that gives the updated balance factor for node D."
+msgstr ""
+
+#: ../../_sources/Trees/DiscussionQuestions.rst:None
+msgid ".. image:: Trees/Figures/bfderive.png"
+msgstr ""
+

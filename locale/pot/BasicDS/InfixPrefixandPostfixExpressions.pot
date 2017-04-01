@@ -1,0 +1,523 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:6
+msgid "Infix, Prefix and Postfix Expressions"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:8
+msgid "When you write an arithmetic expression such as B \\* C, the form of the expression provides you with information so that you can interpret it correctly. In this case we know that the variable B is being multiplied by the variable C since the multiplication operator \\* appears between them in the expression. This type of notation is referred to as **infix** since the operator is *in between* the two operands that it is working on."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:16
+msgid "Consider another infix example, A + B \\* C. The operators + and \\* still appear between the operands, but there is a problem. Which operands do they work on? Does the + work on A and B or does the \\* take B and C? The expression seems ambiguous."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:21
+msgid "In fact, you have been reading and writing these types of expressions for a long time and they do not cause you any problem. The reason for this is that you know something about the operators + and \\*. Each operator has a **precedence** level. Operators of higher precedence are used before operators of lower precedence. The only thing that can change that order is the presence of parentheses. The precedence order for arithmetic operators places multiplication and division above addition and subtraction. If two operators of equal precedence appear, then a left-to-right ordering or associativity is used."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:31
+msgid "Let’s interpret the troublesome expression A + B \\* C using operator precedence. B and C are multiplied first, and A is then added to that result. (A + B) \\* C would force the addition of A and B to be done first before the multiplication. In expression A + B + C, by precedence (via associativity), the leftmost + would be done first."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:37
+msgid "Although all this may be obvious to you, remember that computers need to know exactly what operators to perform and in what order. One way to write an expression that guarantees there will be no confusion with respect to the order of operations is to create what is called a **fully parenthesized** expression. This type of expression uses one pair of parentheses for each operator. The parentheses dictate the order of operations; there is no ambiguity. There is also no need to remember any precedence rules."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:46
+msgid "The expression A + B \\* C + D can be rewritten as ((A + (B \\* C)) + D) to show that the multiplication happens first, followed by the leftmost addition. A + B + C + D can be written as (((A + B) + C) + D) since the addition operations associate from left to right."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:51
+msgid "There are two other very important expression formats that may not seem obvious to you at first. Consider the infix expression A + B. What would happen if we moved the operator before the two operands? The resulting expression would be + A B. Likewise, we could move the operator to the end. We would get A B +. These look a bit strange."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:57
+msgid "These changes to the position of the operator with respect to the operands create two new expression formats, **prefix** and **postfix**. Prefix expression notation requires that all operators precede the two operands that they work on. Postfix, on the other hand, requires that its operators come after the corresponding operands. A few more examples should help to make this a bit clearer (see :ref:`Table 2 <tbl_example1>`)."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:64
+msgid "A + B \\* C would be written as + A \\* B C in prefix. The multiplication operator comes immediately before the operands B and C, denoting that \\* has precedence over +. The addition operator then appears before the A and the result of the multiplication."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:69
+msgid "In postfix, the expression would be A B C \\* +. Again, the order of operations is preserved since the \\* appears immediately after the B and the C, denoting that \\* has precedence, with + coming after. Although the operators moved and now appear either before or after their respective operands, the order of the operands stayed exactly the same relative to one another."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:78
+msgid "**Table 2: Examples of Infix, Prefix, and Postfix**"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:81
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:113
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:129
+msgid "**Infix Expression**"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:81
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:113
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:129
+msgid "**Prefix Expression**"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:81
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:113
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:129
+msgid "**Postfix Expression**"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:83
+msgid "A + B"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:83
+msgid "\\+ A B"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:83
+msgid "A B +"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:84
+msgid "A + B \\* C"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:84
+msgid "\\+ A \\* B C"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:84
+msgid "A B C \\* +"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:88
+msgid "Now consider the infix expression (A + B) \\* C. Recall that in this case, infix requires the parentheses to force the performance of the addition before the multiplication. However, when A + B was written in prefix, the addition operator was simply moved before the operands, + A B. The result of this operation becomes the first operand for the multiplication. The multiplication operator is moved in front of the entire expression, giving us \\* + A B C. Likewise, in postfix A B + forces the addition to happen first. The multiplication can be done to that result and the remaining operand C. The proper postfix expression is then A B + C \\*."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:99
+msgid "Consider these three expressions again (see :ref:`Table 3 <tbl_parexample>`). Something very important has happened. Where did the parentheses go? Why don’t we need them in prefix and postfix? The answer is that the operators are no longer ambiguous with respect to the operands that they work on. Only infix notation requires the additional symbols. The order of operations within prefix and postfix expressions is completely determined by the position of the operator and nothing else. In many ways, this makes infix the least desirable notation to use."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:110
+msgid "**Table 3: An Expression with Parentheses**"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:115
+msgid "(A + B) \\* C"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:115
+msgid "\\* + A B C"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:115
+msgid "A B + C \\*"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:119
+msgid ":ref:`Table 4 <tbl_example3>` shows some additional examples of infix expressions and the equivalent prefix and postfix expressions. Be sure that you understand how they are equivalent in terms of the order of the operations being performed."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:126
+msgid "**Table 4: Additional Examples of Infix, Prefix, and Postfix**"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:131
+msgid "A + B \\* C + D"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:131
+msgid "\\+ \\+ A \\* B C D"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:131
+msgid "A B C \\* + D +"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:132
+msgid "(A + B) \\* (C + D)"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:132
+msgid "\\* + A B + C D"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:132
+msgid "A B + C D + \\*"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:133
+msgid "A \\* B + C \\* D"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:133
+msgid "\\+ \\* A B \\* C D"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:133
+msgid "A B \\* C D \\* +"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:134
+msgid "A + B + C + D"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:134
+msgid "\\+ + + A B C D"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:134
+msgid "A B + C + D +"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:139
+msgid "Conversion of Infix Expressions to Prefix and Postfix"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:141
+msgid "So far, we have used ad hoc methods to convert between infix expressions and the equivalent prefix and postfix expression notations. As you might expect, there are algorithmic ways to perform the conversion that allow any expression of any complexity to be correctly transformed."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:146
+msgid "The first technique that we will consider uses the notion of a fully parenthesized expression that was discussed earlier. Recall that A + B \\* C can be written as (A + (B \\* C)) to show explicitly that the multiplication has precedence over the addition. On closer observation, however, you can see that each parenthesis pair also denotes the beginning and the end of an operand pair with the corresponding operator in the middle."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:154
+msgid "Look at the right parenthesis in the subexpression (B \\* C) above. If we were to move the multiplication symbol to that position and remove the matching left parenthesis, giving us B C \\*, we would in effect have converted the subexpression to postfix notation. If the addition operator were also moved to its corresponding right parenthesis position and the matching left parenthesis were removed, the complete postfix expression would result (see :ref:`Figure 6 <fig_moveright>`)."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:167
+msgid ".. image:: BasicDS/Figures/moveright.png"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:167
+msgid "Figure 6: Moving Operators to the Right for Postfix Notation"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:169
+msgid "If we do the same thing but instead of moving the symbol to the position of the right parenthesis, we move it to the left, we get prefix notation (see :ref:`Figure 7 <fig_moveleft>`). The position of the parenthesis pair is actually a clue to the final position of the enclosed operator."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:179
+msgid ".. image:: BasicDS/Figures/moveleft.png"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:179
+msgid "Figure 7: Moving Operators to the Left for Prefix Notation"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:182
+msgid "So in order to convert an expression, no matter how complex, to either prefix or postfix notation, fully parenthesize the expression using the order of operations. Then move the enclosed operator to the position of either the left or the right parenthesis depending on whether you want prefix or postfix notation."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:188
+msgid "Here is a more complex expression: (A + B) \\* C - (D - E) \\* (F + G). :ref:`Figure 8 <fig_complexmove>` shows the conversion to postfix and prefix notations."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:197
+msgid ".. image:: BasicDS/Figures/complexmove.png"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:197
+msgid "Figure 8: Converting a Complex Expression to Prefix and Postfix Notations"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:200
+msgid "General Infix-to-Postfix Conversion"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:202
+msgid "We need to develop an algorithm to convert any infix expression to a postfix expression. To do this we will look closer at the conversion process."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:206
+msgid "Consider once again the expression A + B \\* C. As shown above, A B C \\* + is the postfix equivalent. We have already noted that the operands A, B, and C stay in their relative positions. It is only the operators that change position. Let’s look again at the operators in the infix expression. The first operator that appears from left to right is +. However, in the postfix expression, + is at the end since the next operator, \\*, has precedence over addition. The order of the operators in the original expression is reversed in the resulting postfix expression."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:216
+msgid "As we process the expression, the operators have to be saved somewhere since their corresponding right operands are not seen yet. Also, the order of these saved operators may need to be reversed due to their precedence. This is the case with the addition and the multiplication in this example. Since the addition operator comes before the multiplication operator and has lower precedence, it needs to appear after the multiplication operator is used. Because of this reversal of order, it makes sense to consider using a stack to keep the operators until they are needed."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:226
+msgid "What about (A + B) \\* C? Recall that A B + C \\* is the postfix equivalent. Again, processing this infix expression from left to right, we see + first. In this case, when we see \\*, + has already been placed in the result expression because it has precedence over \\* by virtue of the parentheses. We can now start to see how the conversion algorithm will work. When we see a left parenthesis, we will save it to denote that another operator of high precedence will be coming. That operator will need to wait until the corresponding right parenthesis appears to denote its position (recall the fully parenthesized technique). When that right parenthesis does appear, the operator can be popped from the stack."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:238
+msgid "As we scan the infix expression from left to right, we will use a stack to keep the operators. This will provide the reversal that we noted in the first example. The top of the stack will always be the most recently saved operator. Whenever we read a new operator, we will need to consider how that operator compares in precedence with the operators, if any, already on the stack."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:245
+msgid "Assume the infix expression is a string of tokens delimited by spaces. The operator tokens are \\*, /, +, and -, along with the left and right parentheses, ( and ). The operand tokens are the single-character identifiers A, B, C, and so on. The following steps will produce a string of tokens in postfix order."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:251
+msgid "Create an empty stack called ``opstack`` for keeping operators. Create an empty list for output."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:254
+msgid "Convert the input infix string to a list by using the string method ``split``."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:257
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:424
+msgid "Scan the token list from left to right."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:259
+msgid "If the token is an operand, append it to the end of the output list."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:262
+msgid "If the token is a left parenthesis, push it on the ``opstack``."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:264
+msgid "If the token is a right parenthesis, pop the ``opstack`` until the corresponding left parenthesis is removed. Append each operator to the end of the output list."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:268
+msgid "If the token is an operator, \\*, /, +, or -, push it on the ``opstack``. However, first remove any operators already on the ``opstack`` that have higher or equal precedence and append them to the output list."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:273
+msgid "When the input expression has been completely processed, check the ``opstack``. Any operators still on the stack can be removed and appended to the end of the output list."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:277
+msgid ":ref:`Figure 9 <fig_intopost>` shows the conversion algorithm working on the expression A \\* B + C \\* D. Note that the first \\* operator is removed upon seeing the + operator. Also, + stays on the stack when the second \\* occurs, since multiplication has precedence over addition. At the end of the infix expression the stack is popped twice, removing both operators and placing + as the last operator in the postfix expression."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:289
+msgid ".. image:: BasicDS/Figures/intopost.png"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:289
+msgid "Figure 9: Converting A \\* B + C \\* D to Postfix Notation"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:291
+msgid "In order to code the algorithm in Python, we will use a dictionary called ``prec`` to hold the precedence values for the operators. This dictionary will map each operator to an integer that can be compared against the precedence levels of other operators (we have arbitrarily used the integers 3, 2, and 1). The left parenthesis will receive the lowest value possible. This way any operator that is compared against it will have higher precedence and will be placed on top of it. Line 15 defines the operands to be any upper-case character or digit. The complete conversion function is shown in :ref:`ActiveCode 1 <lst_intopost>`."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:343
+msgid "data-caption='Converting Infix Expressions to Postfix Expressions'"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:343
+msgid "from pythonds.basic.stack import Stack\n"
+"\n"
+"def infixToPostfix(infixexpr):\n"
+"    prec = {}\n"
+"    prec[\"*\"] = 3\n"
+"    prec[\"/\"] = 3\n"
+"    prec[\"+\"] = 2\n"
+"    prec[\"-\"] = 2\n"
+"    prec[\"(\"] = 1\n"
+"    opStack = Stack()\n"
+"    postfixList = []\n"
+"    tokenList = infixexpr.split()\n"
+"\n"
+"    for token in tokenList:\n"
+"        if token in \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\" or token in \"0123456789\":\n"
+"            postfixList.append(token)\n"
+"        elif token == '(':\n"
+"            opStack.push(token)\n"
+"        elif token == ')':\n"
+"            topToken = opStack.pop()\n"
+"            while topToken != '(':\n"
+"                postfixList.append(topToken)\n"
+"                topToken = opStack.pop()\n"
+"        else:\n"
+"            while (not opStack.isEmpty()) and \\\n"
+"               (prec[opStack.peek()] >= prec[token]):\n"
+"                  postfixList.append(opStack.pop())\n"
+"            opStack.push(token)\n"
+"\n"
+"    while not opStack.isEmpty():\n"
+"        postfixList.append(opStack.pop())\n"
+"    return \" \".join(postfixList)\n"
+"\n"
+"print(infixToPostfix(\"A * B + C * D\"))\n"
+"print(infixToPostfix(\"( A + B ) * C - ( D - E ) * ( F + G )\"))"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:346
+msgid "A few more examples of execution in the Python shell are shown below."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:350
+msgid ">>> infixtopostfix(\"( A + B ) * ( C + D )\")\n"
+"'A B + C D + *'\n"
+">>> infixtopostfix(\"( A + B ) * C\")\n"
+"'A B + C *'\n"
+">>> infixtopostfix(\"A + B * C\")\n"
+"'A B C * +'\n"
+">>>"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:359
+msgid "Postfix Evaluation"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:361
+msgid "As a final stack example, we will consider the evaluation of an expression that is already in postfix notation. In this case, a stack is again the data structure of choice. However, as you scan the postfix expression, it is the operands that must wait, not the operators as in the conversion algorithm above. Another way to think about the solution is that whenever an operator is seen on the input, the two most recent operands will be used in the evaluation."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:369
+msgid "To see this in more detail, consider the postfix expression ``4 5 6 * +``. As you scan the expression from left to right, you first encounter the operands 4 and 5. At this point, you are still unsure what to do with them until you see the next symbol. Placing each on the stack ensures that they are available if an operator comes next."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:375
+msgid "In this case, the next symbol is another operand. So, as before, push it and check the next symbol. Now we see an operator, \\*. This means that the two most recent operands need to be used in a multiplication operation. By popping the stack twice, we can get the proper operands and then perform the multiplication (in this case getting the result 30)."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:382
+msgid "We can now handle this result by placing it back on the stack so that it can be used as an operand for the later operators in the expression. When the final operator is processed, there will be only one value left on the stack. Pop and return it as the result of the expression. :ref:`Figure 10 <fig_evalpost1>` shows the stack contents as this entire example expression is being processed."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:394
+msgid ".. image:: BasicDS/Figures/evalpostfix1.png"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:394
+msgid "Figure 10: Stack Contents During Evaluation"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:397
+msgid ":ref:`Figure 11 <fig_evalpost2>` shows a slightly more complex example, 7 8 + 3 2 + /. There are two things to note in this example. First, the stack size grows, shrinks, and then grows again as the subexpressions are evaluated. Second, the division operation needs to be handled carefully. Recall that the operands in the postfix expression are in their original order since postfix changes only the placement of operators. When the operands for the division are popped from the stack, they are reversed. Since division is *not* a commutative operator, in other words :math:`15/5` is not the same as :math:`5/15`, we must be sure that the order of the operands is not switched."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:413
+msgid ".. image:: BasicDS/Figures/evalpostfix2.png"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:413
+msgid "Figure 11: A More Complex Example of Evaluation"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:416
+msgid "Assume the postfix expression is a string of tokens delimited by spaces. The operators are \\*, /, +, and - and the operands are assumed to be single-digit integer values. The output will be an integer result."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:420
+msgid "Create an empty stack called ``operandStack``."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:422
+msgid "Convert the string to a list by using the string method ``split``."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:426
+msgid "If the token is an operand, convert it from a string to an integer and push the value onto the ``operandStack``."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:429
+msgid "If the token is an operator, \\*, /, +, or -, it will need two operands. Pop the ``operandStack`` twice. The first pop is the second operand and the second pop is the first operand. Perform the arithmetic operation. Push the result back on the ``operandStack``."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:435
+msgid "When the input expression has been completely processed, the result is on the stack. Pop the ``operandStack`` and return the value."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:438
+msgid "The complete function for the evaluation of postfix expressions is shown in :ref:`ActiveCode 2 <lst_postfixeval>`. To assist with the arithmetic, a helper function ``doMath`` is defined that will take two operands and an operator and then perform the proper arithmetic operation."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:476
+msgid "data-caption='Postfix Evaluation'"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:476
+msgid "from pythonds.basic.stack import Stack\n"
+"\n"
+"def postfixEval(postfixExpr):\n"
+"    operandStack = Stack()\n"
+"    tokenList = postfixExpr.split()\n"
+"\n"
+"    for token in tokenList:\n"
+"        if token in \"0123456789\":\n"
+"            operandStack.push(int(token))\n"
+"        else:\n"
+"            operand2 = operandStack.pop()\n"
+"            operand1 = operandStack.pop()\n"
+"            result = doMath(token,operand1,operand2)\n"
+"            operandStack.push(result)\n"
+"    return operandStack.pop()\n"
+"\n"
+"def doMath(op, op1, op2):\n"
+"    if op == \"*\":\n"
+"        return op1 * op2\n"
+"    elif op == \"/\":\n"
+"        return op1 / op2\n"
+"    elif op == \"+\":\n"
+"        return op1 + op2\n"
+"    else:\n"
+"        return op1 - op2\n"
+"\n"
+"print(postfixEval('7 8 + 3 2 + /'))"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:477
+msgid "It is important to note that in both the postfix conversion and the postfix evaluation programs we assumed that there were no errors in the input expression. Using these programs as a starting point, you can easily see how error detection and reporting can be included. We leave this as an exercise at the end of the chapter."
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:483
+msgid "Self Check"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:492
+msgid "Without using the activecode infixToPostfix function, convert the following expression to postfix  ``10 + 3 * 5 / (16 - 4)``"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:500
+msgid "What is the result of evaluating the following: ``17 10 + 3 * 9 / ==``"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:508
+msgid "Modify the infixToPostfix function so that it can convert the following expression:  ``5 * 3 ** (4 - 2)``   Paste the answer here:"
+msgstr ""
+
+#: ../../_sources/BasicDS/InfixPrefixandPostfixExpressions.rst:None
+msgid "<div id=\"video_Stack3\" class=\"video_popup\" >\n"
+"<video controls preload=\"none\"  poster=\"../_static/activecodethumb.png\">\n"
+"    <source src=\"http://media.interactivepython.org/pythondsVideos/Stack3.mov\" type=\"video/mp4\"></source>\n"
+"    <source src=\"http://media.interactivepython.org/pythondsVideos/Stack3.webm\" type=\"video/webm\"></source>\n"
+"    No supported video types\n"
+"</video>\n"
+"</div>\n"
+"<script>\n"
+"   jQuery(function($) {\n"
+"      var rb = new RunestoneBase();\n"
+"      $('#video_Stack3_thumb').click(function(e) {\n"
+"         $('#video_Stack3').show();\n"
+"         $('#video_Stack3_thumb').hide();\n"
+"         rb.logBookEvent({'event':'video','act':'play','div_id': 'video_Stack3'});\n"
+"         // Log the run event\n"
+"      });\n"
+"      $('#video_Stack3 video').one(\"click\", function(){\n"
+"        this.play();\n"
+"      });\n"
+"      $('#video_Stack3 video').one(\"play\", function(){\n"
+"        rb.logBookEvent({'event':'video','act':'play','div_id': 'video_Stack3'});\n"
+"      });\n"
+"   });\n"
+"</script>\n"
+""
+msgstr ""
+

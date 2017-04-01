@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/BasicDS/Lists.rst:6
+msgid "Lists"
+msgstr ""
+
+#: ../../_sources/BasicDS/Lists.rst:8
+msgid ""
+"Throughout the discussion of basic data structures, we have used Python "
+"lists to implement the abstract data types presented. The list is a "
+"powerful, yet simple, collection mechanism that provides the programmer "
+"with a wide variety of operations. However, not all programming languages"
+" include a list collection. In these cases, the notion of a list must be "
+"implemented by the programmer."
+msgstr ""
+
+#: ../../_sources/BasicDS/Lists.rst:15
+msgid ""
+"A **list** is a collection of items where each item holds a relative "
+"position with respect to the others. More specifically, we will refer to "
+"this type of list as an unordered list. We can consider the list as "
+"having a first item, a second item, a third item, and so on. We can also "
+"refer to the beginning of the list (the first item) or the end of the "
+"list (the last item). For simplicity we will assume that lists cannot "
+"contain duplicate items."
+msgstr ""
+
+#: ../../_sources/BasicDS/Lists.rst:23
+msgid ""
+"For example, the collection of integers 54, 26, 93, 17, 77, and 31 might "
+"represent a simple unordered list of exam scores. Note that we have "
+"written them as comma-delimited values, a common way of showing the list "
+"structure. Of course, Python would show this list as "
+":math:`[54,26,93,17,77,31]`."
+msgstr ""
+

@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Graphs/Objectives.rst:6
+msgid "Objectives"
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:8
+msgid "To learn what a graph is and how it is used."
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:10
+msgid "To implement the **graph** abstract data type using multiple internal representations."
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:13
+msgid "To see how graphs can be used to solve a wide variety of problems"
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:15
+msgid "In this chapter we will study graphs. Graphs are a more general structure than the trees we studied in the last chapter; in fact you can think of a tree as a special kind of graph. Graphs can be used to represent many interesting things about our world, including systems of roads, airline flights from city to city, how the Internet is connected, or even the sequence of classes you must take to complete a major in computer science. We will see in this chapter that once we have a good representation for a problem, we can use some standard graph algorithms to solve what otherwise might seem to be a very difficult problem."
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:25
+msgid "While it is relatively easy for humans to look at a road map and understand the relationships between different places, a computer has no such knowledge. However, we can also think of a road map as a graph. When we do so we can have our computer do interesting things for us. If you have ever used one of the Internet map sites, you know that a computer can find the shortest, quickest, or easiest path from one place to another."
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:33
+msgid "As a student of computer science you may wonder about the courses you must take in order to get a major. A graph is good way to represent the prerequisites and other interdependencies among courses. :ref:`Figure 1 <fig1>` shows another graph. This one represents the courses and the order in which they must be taken to complete a major in computer science at Luther College."
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:45
+msgid ".. image:: Graphs/Figures/CS-Prereqs.png"
+msgstr ""
+
+#: ../../_sources/Graphs/Objectives.rst:45
+msgid "Figure 1: Prerequisites for a Computer Science Major"
+msgstr ""
+

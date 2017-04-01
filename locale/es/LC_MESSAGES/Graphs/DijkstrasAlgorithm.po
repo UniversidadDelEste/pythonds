@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:6
+msgid "Dijkstra’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:8
+msgid ""
+"The algorithm we are going to use to determine the shortest path is "
+"called “Dijkstra’s algorithm.” Dijkstra’s algorithm is an iterative "
+"algorithm that provides us with the shortest path from one particular "
+"starting node to all other nodes in the graph. Again this is similar to "
+"the results of a breadth first search."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:14
+msgid ""
+"To keep track of the total cost from the start node to each destination "
+"we will make use of the ``dist`` instance variable in the Vertex class. "
+"The ``dist`` instance variable will contain the current total weight of "
+"the smallest weight path from the start to the vertex in question. The "
+"algorithm iterates once for every vertex in the graph; however, the order"
+" that we iterate over the vertices is controlled by a priority queue. The"
+" value that is used to determine the order of the objects in the priority"
+" queue is ``dist``. When a vertex is first created ``dist`` is set to a "
+"very large number. Theoretically you would set ``dist`` to infinity, but "
+"in practice we just set it to a number that is larger than any real "
+"distance we would have in the problem we are trying to solve."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:26
+msgid ""
+"The code for Dijkstra’s algorithm is shown in :ref:`Listing 1 "
+"<lst_shortpath>`. When the algorithm finishes the distances are set "
+"correctly as are the predecessor links for each vertex in the graph."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:31
+msgid "**Listing 1**"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:35
+msgid ""
+"from pythonds.graphs import PriorityQueue, Graph, Vertex\n"
+"def dijkstra(aGraph,start):\n"
+"    pq = PriorityQueue()\n"
+"    start.setDistance(0)\n"
+"    pq.buildHeap([(v.getDistance(),v) for v in aGraph])\n"
+"    while not pq.isEmpty():\n"
+"        currentVert = pq.delMin()\n"
+"        for nextVert in currentVert.getConnections():\n"
+"            newDist = currentVert.getDistance() \\\n"
+"                    + currentVert.getWeight(nextVert)\n"
+"            if newDist < nextVert.getDistance():\n"
+"                nextVert.setDistance( newDist )\n"
+"                nextVert.setPred(currentVert)\n"
+"                pq.decreaseKey(nextVert,newDist)"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:51
+msgid ""
+"Dijkstra’s algorithm uses a priority queue. You may recall that a "
+"priority queue is based on the heap that we implemented in the Tree "
+"Chapter. There are a couple of differences between that simple "
+"implementation and the implementation we use for Dijkstra’s algorithm. "
+"First, the ``PriorityQueue`` class stores tuples of key, value pairs. "
+"This is important for Dijkstra’s algorithm as the key in the priority "
+"queue must match the key of the vertex in the graph. Secondly the value "
+"is used for deciding the priority, and thus the position of the key in "
+"the priority queue. In this implementation we use the distance to the "
+"vertex as the priority because as we will see when we are exploring the "
+"next vertex, we always want to explore the vertex that has the smallest "
+"distance. The second difference is the addition of the ``decreaseKey`` "
+"method. As you can see, this method is used when the distance to a vertex"
+" that is already in the queue is reduced, and thus moves that vertex "
+"toward the front of the queue."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:69
+msgid ""
+"Let’s walk through an application of Dijkstra’s algorithm one vertex at a"
+" time using the following sequence of figures as our guide. We begin with"
+" the vertex :math:`u`. The three vertices adjacent to :math:`u` are "
+":math:`v,w,` and :math:`x`. Since the initial distances to :math:`v,w,` "
+"and :math:`x` are all initialized to ``sys.maxint``, the new costs to get"
+" to them through the start node are all their direct costs. So we update "
+"the costs to each of these three nodes. We also set the predecessor for "
+"each node to :math:`u` and we add each node to the priority queue. We use"
+" the distance as the key for the priority queue. The state of the "
+"algorithm is shown in :ref:`Figure 3 <fig_dija>`."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:80
+msgid ""
+"In the next iteration of the ``while`` loop we examine the vertices that "
+"are adjacent to :math:`x`. The vertex :math:`x` is next because it has "
+"the lowest overall cost and therefore bubbled its way to the beginning of"
+" the priority queue. At :math:`x` we look at its neighbors :math:`u,v,w` "
+"and :math:`y`. For each neighboring vertex we check to see if the "
+"distance to that vertex through :math:`x` is smaller than the previously "
+"known distance. Obviously this is the case for :math:`y` since its "
+"distance was ``sys.maxint``. It is not the case for :math:`u` or "
+":math:`v` since their distances are 0 and 2 respectively. However, we now"
+" learn that the distance to :math:`w` is smaller if we go through "
+":math:`x` than from :math:`u` directly to :math:`w`. Since that is the "
+"case we update :math:`w` with a new distance and change the predecessor "
+"for :math:`w` from :math:`u` to :math:`x`. See :ref:`Figure 4 <fig_dijb>`"
+" for the state of all the vertices."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:95
+msgid ""
+"The next step is to look at the vertices neighboring :math:`v` (see "
+":ref:`Figure 5 <fig_dijc>`). This step results in no changes to the "
+"graph, so we move on to node :math:`y`. At node :math:`y` (see "
+":ref:`Figure 6 <fig_dijd>`) we discover that it is cheaper to get to both"
+" :math:`w` and :math:`z`, so we adjust the distances and predecessor "
+"links accordingly. Finally we check nodes :math:`w` and :math:`z` (see "
+"see :ref:`Figure 6 <fig_dije>` and see :ref:`Figure 8 <fig_dijf>`). "
+"However, no additional changes are found and so the priority queue is "
+"empty and Dijkstra’s algorithm exits."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:109
+msgid ".. image:: Graphs/Figures/dijkstraa.png"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:109
+msgid "Figure 3: Tracing Dijkstra’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:116
+msgid ".. image:: Graphs/Figures/dijkstrab.png"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:116
+msgid "Figure 4: Tracing Dijkstra’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:123
+msgid ".. image:: Graphs/Figures/dijkstrac.png"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:123
+msgid "Figure 5: Tracing Dijkstra’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:130
+msgid ".. image:: Graphs/Figures/dijkstrad.png"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:130
+msgid "Figure 6: Tracing Dijkstra’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:137
+msgid ".. image:: Graphs/Figures/dijkstrae.png"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:137
+msgid "Figure 7: Tracing Dijkstra’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:144
+msgid ".. image:: Graphs/Figures/dijkstraf.png"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:144
+msgid "Figure 8: Tracing Dijkstra’s Algorithm"
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:148
+msgid ""
+"It is important to note that Dijkstra’s algorithm works only when the "
+"weights are all positive. You should convince yourself that if you "
+"introduced a negative weight on one of the edges to the graph that the "
+"algorithm would never exit."
+msgstr ""
+
+#: ../../_sources/Graphs/DijkstrasAlgorithm.rst:152
+msgid ""
+"We will note that to route messages through the Internet, other "
+"algorithms are used for finding the shortest path. One of the problems "
+"with using Dijkstra’s algorithm on the Internet is that you must have a "
+"complete representation of the graph in order for the algorithm to run. "
+"The implication of this is that every router has a complete map of all "
+"the routers in the Internet. In practice this is not the case and other "
+"variations of the algorithm allow each router to discover the graph as "
+"they go. One such algorithm that you may want to read about is called the"
+" “distance vector” routing algorithm."
+msgstr ""
+

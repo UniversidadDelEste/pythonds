@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/AlgorithmAnalysis/ProgrammingExercises.rst:6
+msgid "Programming Exercises"
+msgstr ""
+
+#: ../../_sources/AlgorithmAnalysis/ProgrammingExercises.rst:10
+msgid ""
+"Devise an experiment to verify that the list index operator is "
+":math:`O(1)`"
+msgstr ""
+
+#: ../../_sources/AlgorithmAnalysis/ProgrammingExercises.rst:13
+msgid ""
+"Devise an experiment to verify that get item and set item are "
+":math:`O(1)` for dictionaries."
+msgstr ""
+
+#: ../../_sources/AlgorithmAnalysis/ProgrammingExercises.rst:16
+msgid ""
+"Devise an experiment that compares the performance of the ``del`` "
+"operator on lists and dictionaries."
+msgstr ""
+
+#: ../../_sources/AlgorithmAnalysis/ProgrammingExercises.rst:19
+msgid ""
+"Given a list of numbers in random order, write an algorithm that works in"
+" :math:`O(n\\log(n))` to find the kth smallest number in the list."
+msgstr ""
+
+#: ../../_sources/AlgorithmAnalysis/ProgrammingExercises.rst:22
+msgid ""
+"Can you improve the algorithm from the previous problem to be linear? "
+"Explain."
+msgstr ""
+

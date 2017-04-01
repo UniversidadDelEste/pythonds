@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:6
+msgid "Binary Heap Operations"
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:8
+msgid "The basic operations we will implement for our binary heap are as follows:"
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:11
+msgid "``BinaryHeap()`` creates a new, empty, binary heap."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:13
+msgid "``insert(k)`` adds a new item to the heap."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:15
+msgid ""
+"``findMin()`` returns the item with the minimum key value, leaving item "
+"in the heap."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:18
+msgid ""
+"``delMin()`` returns the item with the minimum key value, removing the "
+"item from the heap."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:21
+msgid "``isEmpty()`` returns true if the heap is empty, false otherwise."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:23
+msgid "``size()`` returns the number of items in the heap."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:25
+msgid "``buildHeap(list)`` builds a new heap from a list of keys."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:27
+msgid ""
+":ref:`ActiveCode 1 <lst_heap1>` demonstrates the use of some of the "
+"binary heap methods.  Notice that no matter the order that we add items "
+"to the heap, the smallest is removed each time.  We will now turn our "
+"attention to creating an implementation for this idea."
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:54
+msgid "data-caption='Using the Binary Heap'"
+msgstr ""
+
+#: ../../_sources/Trees/BinaryHeapOperations.rst:54
+msgid ""
+"from pythonds.trees.binheap import BinHeap\n"
+"\n"
+"bh = BinHeap()\n"
+"bh.insert(5)\n"
+"bh.insert(7)\n"
+"bh.insert(3)\n"
+"bh.insert(11)\n"
+"\n"
+"print(bh.delMin())\n"
+"\n"
+"print(bh.delMin())\n"
+"\n"
+"print(bh.delMin())\n"
+"\n"
+"print(bh.delMin())"
+msgstr ""
+

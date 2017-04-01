@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/BasicDS/Objectives.rst:6
+msgid "Objectives"
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:8
+msgid "To understand the abstract data types stack, queue, deque, and list."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:10
+msgid ""
+"To be able to implement the ADTs stack, queue, and deque using Python "
+"lists."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:13
+msgid ""
+"To understand the performance of the implementations of basic linear data"
+" structures."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:16
+msgid "To understand prefix, infix, and postfix expression formats."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:18
+msgid "To use stacks to evaluate postfix expressions."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:20
+msgid "To use stacks to convert expressions from infix to postfix."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:22
+msgid "To use queues for basic timing simulations."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:24
+msgid ""
+"To be able to recognize problem properties where stacks, queues, and "
+"deques are appropriate data structures."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:27
+msgid ""
+"To be able to implement the abstract data type list as a linked list "
+"using the node and reference pattern."
+msgstr ""
+
+#: ../../_sources/BasicDS/Objectives.rst:30
+msgid ""
+"To be able to compare the performance of our linked list implementation "
+"with Python’s list implementation."
+msgstr ""
+

@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Recursion/Objectives.rst:6
+msgid "Objectives"
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:8
+msgid "The goals for this chapter are as follows:"
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:10
+msgid "To understand that complex problems that may otherwise be difficult to solve may have a simple recursive solution."
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:13
+msgid "To learn how to formulate programs recursively."
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:15
+msgid "To understand and apply the three laws of recursion."
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:17
+msgid "To understand recursion as a form of iteration."
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:19
+msgid "To implement the recursive formulation of a problem."
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:21
+msgid "To understand how recursion is implemented by a computer system."
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:24
+msgid "mutable"
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:24
+msgid "immutable"
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:24
+msgid "tuple"
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:25
+#: ../../_sources/Recursion/Objectives.rst:25
+msgid "fractal"
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:25
+msgid "Koch"
+msgstr ""
+
+#: ../../_sources/Recursion/Objectives.rst:25
+msgid "Koch fractal"
+msgstr ""
+

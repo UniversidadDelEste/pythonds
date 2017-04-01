@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Recursion/KeyTerms.rst:6
+msgid "Key Terms"
+msgstr ""
+
+#: ../../_sources/Recursion/KeyTerms.rst:9
+msgid "base case"
+msgstr ""
+
+#: ../../_sources/Recursion/KeyTerms.rst:9
+msgid "decrypt"
+msgstr ""
+
+#: ../../_sources/Recursion/KeyTerms.rst:9
+msgid "dynamic programming"
+msgstr ""
+
+#: ../../_sources/Recursion/KeyTerms.rst:10
+msgid "recursion"
+msgstr ""
+
+#: ../../_sources/Recursion/KeyTerms.rst:10
+msgid "recursive call"
+msgstr ""
+
+#: ../../_sources/Recursion/KeyTerms.rst:10
+msgid "stack frame"
+msgstr ""
+

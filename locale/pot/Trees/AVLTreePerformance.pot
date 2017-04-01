@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:6
+msgid "AVL Tree Performance"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:8
+msgid "Before we proceed any further let's look at the result of enforcing this new balance factor requirement. Our claim is that by ensuring that a tree always has a balance factor of -1, 0, or 1 we can get better Big-O performance of key operations. Let us start by thinking about how this balance condition changes the worst-case tree. There are two possibilities to consider, a left-heavy tree and a right heavy tree. If we consider trees of heights 0, 1, 2, and 3, :ref:`Figure 2 <fig_worstAVL>` illustrates the most unbalanced left-heavy tree possible under the new rules."
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:23
+msgid ".. image:: Trees/Figures/worstAVL.png"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:23
+msgid "Figure 2: Worst-Case Left-Heavy AVL Trees"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:26
+msgid "Looking at the total number of nodes in the tree we see that for a tree of height 0 there is 1 node, for a tree of height 1 there is :math:`1+1 = 2` nodes, for a tree of height 2 there are :math:`1+1+2 = 4` and for a tree of height 3 there are :math:`1 + 2 + 4 = 7`. More generally the pattern we see for the number of nodes in a tree of height h (:math:`N_h`) is:"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:38
+msgid "This recurrence may look familiar to you because it is very similar to the Fibonacci sequence. We can use this fact to derive a formula for the height of an AVL tree given the number of nodes in the tree. Recall that for the Fibonacci sequence the :math:`i_{th}` Fibonacci number is given by:"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:51
+msgid "An important mathematical result is that as the numbers of the Fibonacci sequence get larger and larger the ratio of :math:`F_i / F_{i-1}` becomes closer and closer to approximating the golden ratio :math:`\\Phi` which is defined as :math:`\\Phi = \\frac{1 + \\sqrt{5}}{2}`. You can consult a math text if you want to see a derivation of the previous equation. We will simply use this equation to approximate :math:`F_i` as :math:`F_i = \\Phi^i/\\sqrt{5}`. If we make use of this approximation we can rewrite the equation for :math:`N_h` as:"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:66
+msgid "By replacing the Fibonacci reference with its golden ratio approximation we get:"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:74
+msgid "If we rearrange the terms, and take the base 2 log of both sides and then solve for :math:`h` we get the following derivation:"
+msgstr ""
+
+#: ../../_sources/Trees/AVLTreePerformance.rst:84
+msgid "This derivation shows us that at any time the height of our AVL tree is equal to a constant(1.44) times the log of the number of nodes in the tree. This is great news for searching our AVL tree because it limits the search to :math:`O(\\log{N})`."
+msgstr ""
+

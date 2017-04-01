@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:6
+msgid "Vocabulary and Definitions"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:8
+msgid ""
+"Now that we have looked at examples of trees, we will formally define a "
+"tree and its components."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:16
+msgid "Node"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:12
+msgid ""
+"A node is a fundamental part of a tree. It can have a name, which we call"
+" the “key.” A node may also have additional information. We call this "
+"additional information the “payload.” While the payload information is "
+"not central to many tree algorithms, it is often critical in applications"
+" that make use of trees."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:22
+msgid "Edge"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:19
+msgid ""
+"An edge is another fundamental part of a tree. An edge connects two nodes"
+" to show that there is a relationship between them. Every node (except "
+"the root) is connected by exactly one incoming edge from another node. "
+"Each node may have several outgoing edges."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:26
+msgid "Root"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:25
+msgid ""
+"The root of the tree is the only node in the tree that has no incoming "
+"edges. In Figure :ref:`Figure 2 <fig_filetree>`, / is the root of the "
+"tree."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:32
+msgid "Path"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:29
+msgid ""
+"A path is an ordered list of nodes that are connected by edges. For "
+"example, Mammal :math:`\\rightarrow` Carnivora :math:`\\rightarrow` "
+"Felidae :math:`\\rightarrow` Felis :math:`\\rightarrow` Domestica is a "
+"path."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:38
+msgid "Children"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:35
+msgid ""
+"The set of nodes :math:`c` that have incoming edges from the same node to"
+" are said to be the children of that node. In Figure :ref:`Figure 2 "
+"<fig_filetree>`, nodes log/, spool/, and yp/ are the children of node "
+"var/."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:43
+msgid "Parent"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:41
+msgid ""
+"A node is the parent of all the nodes it connects to with outgoing edges."
+" In :ref:`Figure 2 <fig_filetree>` the node var/ is the parent of nodes "
+"log/, spool/, and yp/."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:48
+msgid "Sibling"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:46
+msgid ""
+"Nodes in the tree that are children of the same parent are said to be "
+"siblings. The nodes etc/ and usr/ are siblings in the filesystem tree."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:52
+msgid "Subtree"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:51
+msgid ""
+"A subtree is a set of nodes and edges comprised of a parent and all the "
+"descendants of that parent."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:56
+msgid "Leaf Node"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:55
+msgid ""
+"A leaf node is a node that has no children. For example, Human and "
+"Chimpanzee are leaf nodes in :ref:`Figure 1 <fig_biotree>`."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:62
+msgid "Level"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:59
+msgid ""
+"The level of a node :math:`n` is the number of edges on the path from the"
+" root node to :math:`n`. For example, the level of the Felis node in "
+":ref:`Figure 1 <fig_biotree>` is five. By definition, the level of the "
+"root node is zero."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:66
+msgid "Height"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:65
+msgid ""
+"The height of a tree is equal to the maximum level of any node in the "
+"tree. The height of the tree in :ref:`Figure 2 <fig_filetree>` is two."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:68
+msgid ""
+"With the basic vocabulary now defined, we can move on to a formal "
+"definition of a tree. In fact, we will provide two definitions of a tree."
+" One definition involves nodes and edges. The second definition, which "
+"will prove to be very useful, is a recursive definition."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:73
+msgid ""
+"*Definition One:* A tree consists of a set of nodes and a set of edges "
+"that connect pairs of nodes. A tree has the following properties:"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:76
+msgid "One node of the tree is designated as the root node."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:78
+msgid ""
+"Every node :math:`n`, except the root node, is connected by an edge from "
+"exactly one other node :math:`p`, where :math:`p` is the parent of "
+":math:`n`."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:82
+msgid "A unique path traverses from the root to each node."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:84
+msgid ""
+"If each node in the tree has a maximum of two children, we say that the "
+"tree is a **binary tree**."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:87
+msgid ""
+":ref:`Figure 3 <fig_nodeedgetree>` illustrates a tree that fits "
+"definition one. The arrowheads on the edges indicate the direction of the"
+" connection."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:96
+msgid ""
+".. image:: Trees/Figures/treedef1.png\n"
+"   :alt: image"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:96
+msgid "Figure 3: A Tree Consisting of a Set of Nodes and Edges"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:98
+msgid ""
+"*Definition Two:* A tree is either empty or consists of a root and zero "
+"or more subtrees, each of which is also a tree. The root of each subtree "
+"is connected to the root of the parent tree by an edge. :ref:`Figure 4 "
+"<fig_recursivetree>` illustrates this recursive definition of a tree. "
+"Using the recursive definition of a tree, we know that the tree in "
+":ref:`Figure 4 <fig_recursivetree>` has at least four nodes, since each "
+"of the triangles representing a subtree must have a root. It may have "
+"many more nodes than that, but we do not know unless we look deeper into "
+"the tree."
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:113
+msgid ""
+".. image:: Trees/Figures/TreeDefRecursive.png\n"
+"   :alt: image"
+msgstr ""
+
+#: ../../_sources/Trees/VocabularyandDefinitions.rst:113
+msgid "Figure 4: A recursive Definition of a tree"
+msgstr ""
+

@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Recursion/DiscussionQuestions.rst:6
+msgid "Discussion Questions"
+msgstr ""
+
+#: ../../_sources/Recursion/DiscussionQuestions.rst:8
+msgid ""
+"Draw a call stack for the Tower of Hanoi problem. Assume that you start "
+"with a stack of three disks."
+msgstr ""
+
+#: ../../_sources/Recursion/DiscussionQuestions.rst:11
+msgid ""
+"Using the recursive rules as described, draw a Sierpinski triangle using "
+"paper and pencil."
+msgstr ""
+
+#: ../../_sources/Recursion/DiscussionQuestions.rst:14
+msgid ""
+"Using the dynamic programming algorithm for making change, find the "
+"smallest number of coins that you can use to make 33 cents in change. In "
+"addition to the usual coins assume that you have an 8 cent coin."
+msgstr ""
+

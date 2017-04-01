@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:6
+msgid "Stack Frames: Implementing Recursion"
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:8
+msgid ""
+"Suppose that instead of concatenating the result of the recursive call to"
+" ``toStr`` with the string from ``convertString``, we modified our "
+"algorithm to push the strings onto a stack prior to making the recursive "
+"call. The code for this modified algorithm is shown in :ref:`ActiveCode 1"
+" <lst_recstack>`."
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:37
+msgid "data-caption='Converting an Integer to a String Using a Stack'"
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:37
+msgid ""
+"from pythonds.basic.stack import Stack\n"
+"\n"
+"rStack = Stack()\n"
+"\n"
+"def toStr(n,base):\n"
+"    convertString = \"0123456789ABCDEF\"\n"
+"    while n > 0:\n"
+"        if n < base:\n"
+"            rStack.push(convertString[n])\n"
+"        else:\n"
+"            rStack.push(convertString[n % base])\n"
+"        n = n // base\n"
+"    res = \"\"\n"
+"    while not rStack.isEmpty():\n"
+"        res = res + str(rStack.pop())\n"
+"    return res\n"
+"\n"
+"print(toStr(1453,16))"
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:38
+msgid ""
+"Each time we make a call to ``toStr``, we push a character on the stack. "
+"Returning to the previous example we can see that after the fourth call "
+"to ``toStr`` the stack would look like :ref:`Figure 5 <fig_recstack>`. "
+"Notice that now we can simply pop the characters off the stack and "
+"concatenate them into the final result, ``\"1010\"``."
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:49
+msgid ".. image:: Recursion/Figures/recstack.png"
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:49
+msgid "Figure 5: Strings Placed on the Stack During Conversion"
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:52
+msgid ""
+"The previous example gives us some insight into how Python implements a "
+"recursive function call. When a function is called in Python, a **stack "
+"frame** is allocated to handle the local variables of the function. When "
+"the function returns, the return value is left on top of the stack for "
+"the calling function to access. :ref:`Figure 6 <fig_callstack>` "
+"illustrates the call stack after the return statement on line 4."
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:64
+msgid ".. image:: Recursion/Figures/newcallstack.png"
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:64
+msgid "Figure 6: Call Stack Generated from ``toStr(10,2)``"
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:67
+msgid ""
+"Notice that the call to ``toStr(2//2,2)`` leaves a return value of "
+"``\"1\"`` on the stack. This return value is then used in place of the "
+"function call (``toStr(1,2)``) in the expression ``\"1\" + "
+"convertString[2%2]``, which will leave the string ``\"10\"`` on the top "
+"of the stack. In this way, the Python call stack takes the place of the "
+"stack we used explicitly in :ref:`Listing 4 <lst_recstack>`. In our list "
+"summing example, you can think of the return value on the stack taking "
+"the place of an accumulator variable."
+msgstr ""
+
+#: ../../_sources/Recursion/StackFramesImplementingRecursion.rst:75
+msgid ""
+"The stack frames also provide a scope for the variables used by the "
+"function. Even though we are calling the same function over and over, "
+"each call creates a new scope for the variables that are local to the "
+"function."
+msgstr ""
+

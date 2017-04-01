@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:6
+msgid "Discussion Questions"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:8
+msgid "Draw the graph corresponding to the following adjacency matrix."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:None
+msgid ".. image:: Graphs/Figures/adjMatEX.png"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:14
+msgid "Draw the graph corresponding to the following list of edges."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:19
+msgid "from"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:19
+msgid "to"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:19
+msgid "cost"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:21
+#: ../../_sources/Graphs/DiscussionQuestions.rst:23
+#: ../../_sources/Graphs/DiscussionQuestions.rst:25
+msgid "1"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:21
+#: ../../_sources/Graphs/DiscussionQuestions.rst:27
+msgid "2"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:21
+#: ../../_sources/Graphs/DiscussionQuestions.rst:31
+msgid "10"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:23
+#: ../../_sources/Graphs/DiscussionQuestions.rst:27
+#: ../../_sources/Graphs/DiscussionQuestions.rst:29
+#: ../../_sources/Graphs/DiscussionQuestions.rst:31
+msgid "3"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:23
+msgid "15"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:25
+#: ../../_sources/Graphs/DiscussionQuestions.rst:31
+#: ../../_sources/Graphs/DiscussionQuestions.rst:35
+#: ../../_sources/Graphs/DiscussionQuestions.rst:37
+msgid "6"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:25
+#: ../../_sources/Graphs/DiscussionQuestions.rst:33
+#: ../../_sources/Graphs/DiscussionQuestions.rst:35
+#: ../../_sources/Graphs/DiscussionQuestions.rst:37
+msgid "5"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:27
+#: ../../_sources/Graphs/DiscussionQuestions.rst:29
+#: ../../_sources/Graphs/DiscussionQuestions.rst:33
+msgid "7"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:29
+#: ../../_sources/Graphs/DiscussionQuestions.rst:33
+#: ../../_sources/Graphs/DiscussionQuestions.rst:35
+msgid "4"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:37
+msgid "13"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:40
+msgid "Ignoring the weights, perform a breadth first search on the graph from the previous question."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:43
+msgid "What is the Big-O running time of the ``buildGraph`` function?"
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:45
+msgid "Derive the Big-O running time for the topological sort algorithm."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:47
+msgid "Derive the Big-O running time for the strongly connected components algorithm."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:50
+msgid "Show each step in applying Dijkstra’s algorithm to the graph shown above."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:52
+msgid "Using Prim’s algorithm, find the minimum weight spanning tree for the graph shown above."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:55
+msgid "Draw a dependency graph illustrating the steps needed to send an email. Perform a topological sort on your graph."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:58
+msgid "Derive an expression for the base of the exponent used in expressing the running time of the knights tour."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:61
+msgid "Explain why the general DFS algorithm is not suitable for solving the knights tour problem."
+msgstr ""
+
+#: ../../_sources/Graphs/DiscussionQuestions.rst:64
+msgid "What is the Big-O running time for Prim’s minimum spanning tree algorithm?"
+msgstr ""
+

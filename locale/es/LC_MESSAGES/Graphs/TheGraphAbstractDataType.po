@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:6
+msgid "The Graph Abstract Data Type"
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:8
+msgid "The graph abstract data type (ADT) is defined as follows:"
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:10
+msgid "``Graph()`` creates a new, empty graph."
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:12
+msgid "``addVertex(vert)`` adds an instance of ``Vertex`` to the graph."
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:14
+msgid ""
+"``addEdge(fromVert, toVert)`` Adds a new, directed edge to the graph that"
+" connects two vertices."
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:17
+msgid ""
+"``addEdge(fromVert, toVert, weight)`` Adds a new, weighted, directed edge"
+" to the graph that connects two vertices."
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:20
+msgid "``getVertex(vertKey)`` finds the vertex in the graph named ``vertKey``."
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:23
+msgid "``getVertices()`` returns the list of all vertices in the graph."
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:25
+msgid ""
+"``in`` returns ``True`` for a statement of the form ``vertex in graph``, "
+"if the given vertex is in the graph, ``False`` otherwise."
+msgstr ""
+
+#: ../../_sources/Graphs/TheGraphAbstractDataType.rst:29
+msgid ""
+"Beginning with the formal definition for a graph there are several ways "
+"we can implement the graph ADT in Python. We will see that there are "
+"trade-offs in using different representations to implement the ADT "
+"described above. There are two well-known implementations of a graph, the"
+" **adjacency matrix** and the **adjacency list**. We will explain both of"
+" these options, and then implement one as a Python class."
+msgstr ""
+

@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Graphs/TheKnightsTourProblem.rst:6
+msgid "The Knight’s Tour Problem"
+msgstr ""
+
+#: ../../_sources/Graphs/TheKnightsTourProblem.rst:8
+msgid "Another classic problem that we can use to illustrate a second common graph algorithm is called the “knight’s tour.” The knight’s tour puzzle is played on a chess board with a single chess piece, the knight. The object of the puzzle is to find a sequence of moves that allow the knight to visit every square on the board exactly once. One such sequence is called a “tour.” The knight’s tour puzzle has fascinated chess players, mathematicians and computer scientists alike for many years. The upper bound on the number of possible legal tours for an eight-by-eight chessboard is known to be :math:`1.305 \\times 10^{35}`; however, there are even more possible dead ends. Clearly this is a problem that requires some real brains, some real computing power, or both."
+msgstr ""
+
+#: ../../_sources/Graphs/TheKnightsTourProblem.rst:21
+msgid "Although researchers have studied many different algorithms to solve the knight’s tour problem, a graph search is one of the easiest to understand and program. Once again we will solve the problem using two main steps:"
+msgstr ""
+
+#: ../../_sources/Graphs/TheKnightsTourProblem.rst:26
+msgid "Represent the legal moves of a knight on a chessboard as a graph."
+msgstr ""
+
+#: ../../_sources/Graphs/TheKnightsTourProblem.rst:28
+msgid "Use a graph algorithm to find a path of length :math:`rows \\times columns - 1` where every vertex on the graph is visited exactly once."
+msgstr ""
+

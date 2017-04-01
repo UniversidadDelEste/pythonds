@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving
+# with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures "
+"3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Introduction/KeyTerms.rst:6
+msgid "Key Terms"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:11
+msgid "abstract data type"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:11
+msgid "abstraction"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:11
+msgid "algorithm"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:12
+msgid "class"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:12
+msgid "computable"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:12
+msgid "data abstraction"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:13
+msgid "data structure"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:13
+msgid "data type"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:13
+msgid "deep equality"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:14
+msgid "dictionary"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:14
+msgid "encapsulation"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:14
+msgid "exception"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:15
+msgid "format operator"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:15
+msgid "formatted strings"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:15
+msgid "HAS-A relationship"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:16
+msgid "implementation-independent"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:16
+msgid "information hiding"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:16
+msgid "inheritance"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:17
+msgid "inheritance hierarchy"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:17
+msgid "interface"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:17
+msgid "IS-A relationship"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:18
+msgid "list"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:18
+msgid "list comprehension"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:18
+msgid "method"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:19
+msgid "mutability"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:19
+msgid "object"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:19
+msgid "procedural abstraction"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:20
+msgid "programming"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:20
+msgid "prompt"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:20
+msgid "``self``"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:21
+msgid "shallow equality"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:21
+msgid "simulation"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:21
+msgid "string"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:22
+msgid "subclass"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:22
+msgid "superclass"
+msgstr ""
+
+#: ../../_sources/Introduction/KeyTerms.rst:22
+msgid "truth table"
+msgstr ""
+

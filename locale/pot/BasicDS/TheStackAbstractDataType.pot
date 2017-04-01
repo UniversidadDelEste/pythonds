@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014 Brad Miller, David Ranum
+# This file is distributed under the same license as the Problem Solving with Algorithms and Data Structures package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Problem Solving with Algorithms and Data Structures 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 14:03-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:6
+msgid "The Stack Abstract Data Type"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:8
+msgid "The stack abstract data type is defined by the following structure and operations. A stack is structured, as described above, as an ordered collection of items where items are added to and removed from the end called the “top.” Stacks are ordered LIFO. The stack operations are given below."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:14
+msgid "``Stack()`` creates a new stack that is empty. It needs no parameters and returns an empty stack."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:17
+msgid "``push(item)`` adds a new item to the top of the stack. It needs the item and returns nothing."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:20
+msgid "``pop()`` removes the top item from the stack. It needs no parameters and returns the item. The stack is modified."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:23
+msgid "``peek()`` returns the top item from the stack but does not remove it. It needs no parameters. The stack is not modified."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:26
+msgid "``isEmpty()`` tests to see whether the stack is empty. It needs no parameters and returns a boolean value."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:29
+msgid "``size()`` returns the number of items on the stack. It needs no parameters and returns an integer."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:32
+msgid "For example, if ``s`` is a stack that has been created and starts out empty, then :ref:`Table 1 <tbl_stackops>` shows the results of a sequence of stack operations. Under stack contents, the top item is listed at the far right."
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:39
+msgid "**Table 1: Sample Stack Operations**"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:42
+msgid "**Stack Operation**"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:42
+msgid "**Stack Contents**"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:42
+msgid "**Return Value**"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:44
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:50
+msgid "``s.isEmpty()``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:44
+msgid "``[]``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:44
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:53
+msgid "``True``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:45
+msgid "``s.push(4)``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:45
+msgid "``[4]``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:46
+msgid "``s.push('dog')``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:46
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:47
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:53
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:54
+msgid "``[4,'dog']``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:47
+msgid "``s.peek()``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:47
+msgid "``'dog'``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:48
+msgid "``s.push(True)``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:48
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:49
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:50
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:52
+msgid "``[4,'dog',True]``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:49
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:54
+msgid "``s.size()``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:49
+msgid "``3``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:50
+msgid "``False``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:51
+msgid "``s.push(8.4)``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:51
+msgid "``[4,'dog',True,8.4]``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:52
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:53
+msgid "``s.pop()``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:52
+msgid "``8.4``"
+msgstr ""
+
+#: ../../_sources/BasicDS/TheStackAbstractDataType.rst:54
+msgid "``2``"
+msgstr ""
+
