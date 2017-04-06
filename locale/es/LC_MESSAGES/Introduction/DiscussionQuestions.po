@@ -4,24 +4,25 @@
 # with Algorithms and Data Structures package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Problem Solving with Algorithms and Data Structures "
 "3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-01 14:03-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-05 18:09-0300\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Last-Translator: Carlos Sisek <carlos.sisek@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: ../../_sources/Introduction/DiscussionQuestions.rst:6
 msgid "Discussion Questions"
-msgstr ""
+msgstr "Preguntas de discusión"
 
 #: ../../_sources/Introduction/DiscussionQuestions.rst:8
 msgid ""
@@ -29,18 +30,28 @@ msgid ""
 "faculty, staff, and students. What do they have in common? What "
 "distinguishes them from one another?"
 msgstr ""
+"Construya una jerarquía de clases para las personas en un campus "
+"universitario. Incluya facultad, personal y estudiantes. ¿Qué tienen en "
+"común? ¿Qué los distingue entre sí?"
 
 #: ../../_sources/Introduction/DiscussionQuestions.rst:12
 msgid "Construct a class hierarchy for bank accounts."
-msgstr ""
+msgstr "Construya una jerarquía de clases para las cuentas bancarias."
 
 #: ../../_sources/Introduction/DiscussionQuestions.rst:14
 msgid "Construct a class hierarchy for different types of computers."
 msgstr ""
+"Construya una jerarquía de clases para diferentes tipos de computadoras."
 
+# Carlos Sisek
+# carlos.sisek@gmail.com
+# Diplomatura en Software Libre
+# Universidad del Este
+# 2017
 #: ../../_sources/Introduction/DiscussionQuestions.rst:16
 msgid ""
 "Using the classes provided in the chapter, interactively construct a "
 "circuit and test it."
 msgstr ""
-
+"Utilizando las clases proporcionadas en el capítulo, construya "
+"interactivamente un circuito y pruébelo."

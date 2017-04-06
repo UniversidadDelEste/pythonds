@@ -1,21 +1,22 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Problem Solving with Algorithms and Data Structures "
 "3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-01 14:03-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-06 19:22-0300\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Last-Translator: Carlos Sisek <carlos.sisek@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:6
 msgid "Getting Started with Data"
-msgstr ""
+msgstr "Comenzando con Datos"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:8
 msgid ""
@@ -24,33 +25,55 @@ msgid ""
 "the problem-solving process. In Python, as well as in any other object-"
 "oriented programming language, we define a **class** to be a description "
 "of what the data look like (the state) and what the data can do (the "
-"behavior). Classes are analogous to abstract data types because a user of"
-" a class only sees the state and behavior of a data item. Data items are "
-"called **objects** in the object-oriented paradigm. An object is an "
+"behavior). Classes are analogous to abstract data types because a user "
+"of a class only sees the state and behavior of a data item. Data items "
+"are called **objects** in the object-oriented paradigm. An object is an "
 "instance of a class."
 msgstr ""
+"Hemos dicho anteriormente que Python apoya el paradigma de programación "
+"orientado a objetos. Esto significa que Python considera que los datos "
+"son el punto focal del proceso de resolución de problemas. En Python, "
+"así como en cualquier otro lenguaje de programación orientado a objetos, "
+"definimos una ** clase ** como una descripción de lo que parecen los "
+"datos (el estado) y lo que los datos pueden hacer (el comportamiento). "
+"Las clases son análogas a los tipos de datos abstractos porque un "
+"usuario de una clase sólo ve el estado y el comportamiento de un "
+"elemento de datos. Los elementos de datos se denominan ** objetos ** en "
+"el paradigma orientado a objetos. Un objeto es una instancia de una "
+"clase."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:19
 msgid "Built-in Atomic Data Types"
-msgstr ""
+msgstr "Tipos de datos atómicos incorporados"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:21
 msgid ""
-"We will begin our review by considering the atomic data types. Python has"
-" two main built-in numeric classes that implement the integer and "
+"We will begin our review by considering the atomic data types. Python "
+"has two main built-in numeric classes that implement the integer and "
 "floating point data types. These Python classes are called ``int`` and "
 "``float``. The standard arithmetic operations, +, -, \\*, /, and \\*\\* "
 "(exponentiation), can be used with parentheses forcing the order of "
 "operations away from normal operator precedence. Other very useful "
-"operations are the remainder (modulo) operator, %, and integer division, "
-"//. Note that when two integers are divided, the result is a floating "
-"point. The integer division operator returns the integer portion of the "
-"quotient by truncating any fractional part."
+"operations are the remainder (modulo) operator, %, and integer "
+"division, //. Note that when two integers are divided, the result is a "
+"floating point. The integer division operator returns the integer "
+"portion of the quotient by truncating any fractional part."
 msgstr ""
+"Comenzaremos nuestra revisión considerando los tipos de datos atómicos. "
+"Python tiene dos clases numéricas incorporadas principales que "
+"implementan los tipos de datos enteros y de punto flotante. Estas clases "
+"de Python se llaman `` int`` y `` float``. Las operaciones aritméticas "
+"estándar, +, -, \\ *, /, y \\ * \\ * (exponenciación), pueden usarse con "
+"paréntesis forzando el orden de las operaciones lejos de la precedencia "
+"normal del operador. Otras operaciones muy útiles son el resto (módulo) "
+"operador,% y división entera, //. Tenga en cuenta que cuando dos enteros "
+"se dividen, el resultado es un punto flotante. El operador de división "
+"entera devuelve la porción entera del cociente truncando cualquier parte "
+"fraccional."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:47
 msgid "data-caption='Basic Arithmetic Operators'"
-msgstr ""
+msgstr "data-caption = 'Operadores Aritméticos Básicos'"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:47
 msgid ""
@@ -66,14 +89,29 @@ msgid ""
 "print(3%6)\n"
 "print(2**100)"
 msgstr ""
+"print(2+3*4)\n"
+"print((2+3)*4)\n"
+"print(2**10)\n"
+"print(6/3)\n"
+"print(7/3)\n"
+"print(7//3)\n"
+"print(7%3)\n"
+"print(3/6)\n"
+"print(3//6)\n"
+"print(3%6)\n"
+"print(2**100)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:48
 msgid ""
 "The boolean data type, implemented as the Python ``bool`` class, will be "
-"quite useful for representing truth values. The possible state values for"
-" a boolean object are ``True`` and ``False`` with the standard boolean "
-"operators, ``and``, ``or``, and ``not``."
+"quite useful for representing truth values. The possible state values "
+"for a boolean object are ``True`` and ``False`` with the standard "
+"boolean operators, ``and``, ``or``, and ``not``."
 msgstr ""
+"El tipo de datos booleano, implementado como la clase `` bool`` de "
+"Python, será muy útil para representar valores de verdad. Los posibles "
+"valores de estado para un objeto booleano son `` True`` y `` False`` con "
+"los operadores booleanos estándar, `` and``, `` or`` y `` not``."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:55
 msgid ""
@@ -88,33 +126,49 @@ msgid ""
 ">>> True and True\n"
 "True"
 msgstr ""
+">>> True\n"
+"True\n"
+">>> False\n"
+"False\n"
+">>> False or True\n"
+"True\n"
+">>> not (False or True)\n"
+"False\n"
+">>> True and True\n"
+"True"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:66
 msgid ""
 "Boolean data objects are also used as results for comparison operators "
 "such as equality (==) and greater than (:math:`>`). In addition, "
 "relational operators and logical operators can be combined together to "
-"form complex logical questions. :ref:`Table 1 <tab_relational>` shows the"
-" relational and logical operators with examples shown in the session that"
-" follows."
+"form complex logical questions. :ref:`Table 1 <tab_relational>` shows "
+"the relational and logical operators with examples shown in the session "
+"that follows."
 msgstr ""
+"Los objetos de datos booleanos también se utilizan como resultados para "
+"operadores de comparación como igualdad (==) y mayor que (: math: `>`). "
+"Además, los operadores relacionales y los operadores lógicos pueden "
+"combinarse para formar preguntas lógicas complejas. : Ref: `Tabla 1 "
+"<tab_relational>` muestra los operadores relacionales y lógicos con "
+"ejemplos mostrados en la sesión que sigue."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:74
 msgid "**Table 1: Relational and Logical Operators**"
-msgstr ""
+msgstr "**Tabla 1: Operadores relacionales y lógicos**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:77
 #: ../../_sources/Introduction/GettingStartedwithData.rst:188
 #: ../../_sources/Introduction/GettingStartedwithData.rst:473
 msgid "**Operation Name**"
-msgstr ""
+msgstr "**Nombre de la Operación**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:77
 #: ../../_sources/Introduction/GettingStartedwithData.rst:188
 #: ../../_sources/Introduction/GettingStartedwithData.rst:473
 #: ../../_sources/Introduction/GettingStartedwithData.rst:608
 msgid "**Operator**"
-msgstr ""
+msgstr "**Operador**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:77
 #: ../../_sources/Introduction/GettingStartedwithData.rst:188
@@ -125,119 +179,121 @@ msgstr ""
 #: ../../_sources/Introduction/GettingStartedwithData.rst:608
 #: ../../_sources/Introduction/GettingStartedwithData.rst:644
 msgid "**Explanation**"
-msgstr ""
+msgstr "**Explicación**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:79
 msgid "less than"
-msgstr ""
+msgstr "menor que"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:79
 msgid ":math:`<`"
-msgstr ""
+msgstr ":math:`<`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:79
 msgid "Less than operator"
-msgstr ""
+msgstr "Menor como operador"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:80
 msgid "greater than"
-msgstr ""
+msgstr "mayor que"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:80
 msgid ":math:`>`"
-msgstr ""
+msgstr ":math:`>`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:80
 msgid "Greater than operator"
-msgstr ""
+msgstr "Mayor como operador"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:81
 msgid "less than or equal"
-msgstr ""
+msgstr "menor o igual que"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:81
 msgid ":math:`<=`"
-msgstr ""
+msgstr ":math:`<=`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:81
 msgid "Less than or equal to operator"
-msgstr ""
+msgstr "Menor o igual que como operador"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:82
 msgid "greater than or equal"
-msgstr ""
+msgstr "mayor o igual que"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:82
 msgid ":math:`>=`"
-msgstr ""
+msgstr ":math:`>=`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:82
 msgid "Greater than or equal to operator"
-msgstr ""
+msgstr "Mayor o igual que como operador"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:83
 msgid "equal"
-msgstr ""
+msgstr "igualdad"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:83
 msgid ":math:`==`"
-msgstr ""
+msgstr ":math:`==`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:83
 msgid "Equality operator"
-msgstr ""
+msgstr "Igualdad como operador"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:84
 msgid "not equal"
-msgstr ""
+msgstr "no igual"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:84
 msgid ":math:`!=`"
-msgstr ""
+msgstr ":math:`!=`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:84
 msgid "Not equal operator"
-msgstr ""
+msgstr "Operador No igual"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:85
 msgid "logical and"
-msgstr ""
+msgstr "y lógico"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:85
 msgid ":math:`and`"
-msgstr ""
+msgstr ":math:`and`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:85
 msgid "Both operands True for result to be True"
-msgstr ""
+msgstr "Ambos operandos True para que el resultado sea True"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:86
 msgid "logical or"
-msgstr ""
+msgstr "o lógico"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:86
 msgid ":math:`or`"
-msgstr ""
+msgstr ":math:`or`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:86
 msgid "One or the other operand is True for the result to be True"
-msgstr ""
+msgstr "Uno u otro operando es True para que el resultado sea True"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:87
 msgid "logical not"
-msgstr ""
+msgstr "no lógico"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:87
 msgid ":math:`not`"
-msgstr ""
+msgstr ":math:`not`"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:87
 msgid "Negates the truth value, False becomes True, True becomes False"
 msgstr ""
+"Niega el valor de la verdad, False se convierte en True, True se "
+"convierte en False"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:98
 msgid "data-caption='Basic Relational and Logical Operators'"
-msgstr ""
+msgstr "data-caption = 'Operadores Básicos Relacionales y Lógicos'"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:98
 msgid ""
@@ -245,15 +301,24 @@ msgid ""
 "print(10 > 5)\n"
 "print((5 >= 1) and (5 <= 10))"
 msgstr ""
+"print(5==10)\n"
+"print(10 > 5)\n"
+"print((5 >= 1) and (5 <= 10))"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:99
 msgid ""
 "Identifiers are used in programming languages as names. In Python, "
-"identifiers start with a letter or an underscore (_), are case sensitive,"
-" and can be of any length. Remember that it is always a good idea to use "
-"names that convey meaning so that your program code is easier to read and"
-" understand."
+"identifiers start with a letter or an underscore (_), are case "
+"sensitive, and can be of any length. Remember that it is always a good "
+"idea to use names that convey meaning so that your program code is "
+"easier to read and understand."
 msgstr ""
+"Los identificadores se utilizan en los lenguajes de programación como "
+"nombres. En Python, los identificadores comienzan con una letra o un "
+"guión bajo (_), son sensibles a mayúsculas y minúsculas, y pueden ser de "
+"cualquier longitud. Recuerde que siempre es una buena idea usar nombres "
+"que transmitan significado para que su código de programa sea más fácil "
+"de leer y entender."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:105
 msgid ""
@@ -263,6 +328,11 @@ msgid ""
 "reference to a piece of data and not the data itself. Consider the "
 "following session:"
 msgstr ""
+"Una variable Python se crea cuando se utiliza un nombre por primera vez "
+"en el lado izquierdo de una instrucción de asignación. Las sentencias de "
+"asignación proporcionan una forma de asociar un nombre a un valor. La "
+"variable contendrá una referencia a una pieza de datos y no a los datos "
+"en sí. Considere la siguiente sesión:"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:113
 msgid ""
@@ -276,52 +346,80 @@ msgid ""
 ">>> theSum\n"
 "True"
 msgstr ""
+">>> theSum = 0\n"
+">>> theSum\n"
+"0\n"
+">>> theSum = theSum + 1\n"
+">>> theSum\n"
+"1\n"
+">>> theSum = True\n"
+">>> theSum\n"
+"True"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:123
 msgid ""
 "The assignment statement ``theSum = 0`` creates a variable called "
-"``theSum`` and lets it hold the reference to the data object ``0`` (see "
-":ref:`Figure 3 <fig_assignment1>`). In general, the right-hand side of "
+"``theSum`` and lets it hold the reference to the data object ``0`` (see :"
+"ref:`Figure 3 <fig_assignment1>`). In general, the right-hand side of "
 "the assignment statement is evaluated and a reference to the resulting "
 "data object is “assigned” to the name on the left-hand side. At this "
 "point in our example, the type of the variable is integer as that is the "
 "type of the data currently being referred to by ``theSum``. If the type "
 "of the data changes (see :ref:`Figure 4 <fig_assignment2>`), as shown "
 "above with the boolean value ``True``, so does the type of the variable "
-"(``theSum`` is now of the type boolean). The assignment statement changes"
-" the reference being held by the variable. This is a dynamic "
+"(``theSum`` is now of the type boolean). The assignment statement "
+"changes the reference being held by the variable. This is a dynamic "
 "characteristic of Python. The same variable can refer to many different "
 "types of data."
 msgstr ""
+"La instrucción de asignación `` theSum = 0`` crea una variable llamada "
+"`` theSum`` y permite mantener la referencia al objeto de datos `` 0`` "
+"(ver: ref: `Figura 3 <fig_assignment1>`). En general, se evalúa el lado "
+"derecho de la instrucción de asignación y se asigna una referencia al "
+"objeto de datos resultante al nombre del lado izquierdo. En este punto "
+"de nuestro ejemplo, el tipo de la variable es entero, ya que es el tipo "
+"de los datos a los que se refiere actualmente `` theSum``. Si el tipo de "
+"datos cambia (véase: ref: `Figura 4 <fig_assignment2>`), como se muestra "
+"arriba con el valor booleano `` True``, también el tipo de la variable "
+"(`` theSum`` es ahora de El tipo booleano). La instrucción de asignación "
+"cambia la referencia que está siendo retenida por la variable. Esta es "
+"una característica dinámica de Python. La misma variable puede referirse "
+"a muchos tipos diferentes de datos."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:141
 msgid ".. image:: Introduction/Figures/assignment1.png"
-msgstr ""
+msgstr ".. image:: Introduction/Figures/assignment1.png"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:141
 msgid "Figure 3: Variables Hold References to Data Objects"
-msgstr ""
+msgstr "Figura 3: Referencias de variables a objetos de datos"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:148
 msgid ".. image:: Introduction/Figures/assignment2.png"
-msgstr ""
+msgstr ".. image:: Introduction/Figures/assignment2.png"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:148
 msgid "Figure 4: Assignment Changes the Reference"
-msgstr ""
+msgstr "Figura 4: Asignación Cambia la Referencia"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:151
 msgid "Built-in Collection Data Types"
-msgstr ""
+msgstr "Colección de tipos de datos incorporados"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:153
 msgid ""
 "In addition to the numeric and boolean classes, Python has a number of "
-"very powerful built-in collection classes. Lists, strings, and tuples are"
-" ordered collections that are very similar in general structure but have "
-"specific differences that must be understood for them to be used "
+"very powerful built-in collection classes. Lists, strings, and tuples "
+"are ordered collections that are very similar in general structure but "
+"have specific differences that must be understood for them to be used "
 "properly. Sets and dictionaries are unordered collections."
 msgstr ""
+"Además de las clases numéricas y booleanas, Python tiene una serie de "
+"clases de recopilación muy potentes. Las listas, cadenas y tuplas son "
+"colecciones ordenadas que son muy similares en la estructura general "
+"pero tienen diferencias específicas que deben ser entendidas para que "
+"sean usadas correctamente. Conjuntos y diccionarios son colecciones no "
+"ordenadas."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:159
 msgid ""
@@ -329,9 +427,16 @@ msgid ""
 "data objects. Lists are written as comma-delimited values enclosed in "
 "square brackets. The empty list is simply ``[ ]``. Lists are "
 "heterogeneous, meaning that the data objects need not all be from the "
-"same class and the collection can be assigned to a variable as below. The"
-" following fragment shows a variety of Python data objects in a list."
+"same class and the collection can be assigned to a variable as below. "
+"The following fragment shows a variety of Python data objects in a list."
 msgstr ""
+"Una ** lista ** es una colección ordenada de cero o más referencias a "
+"objetos de datos Python. Las listas se escriben como valores delimitados "
+"por comas entre corchetes. La lista vacía es simplemente `` [] ``. Las "
+"listas son heterogéneas, lo que significa que los objetos de datos no "
+"necesitan ser todos de la misma clase y la colección se puede asignar a "
+"una variable como a continuación. El siguiente fragmento muestra una "
+"variedad de objetos de datos de Python en una lista."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:168
 msgid ""
@@ -341,6 +446,11 @@ msgid ""
 ">>> myList\n"
 "[1, 3, True, 6.5]"
 msgstr ""
+">>> [1,3,True,6.5]\n"
+"[1, 3, True, 6.5]\n"
+">>> myList = [1,3,True,6.5]\n"
+">>> myList\n"
+"[1, 3, True, 6.5]"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:174
 msgid ""
@@ -348,94 +458,101 @@ msgid ""
 "However, in order to remember the list for later processing, its "
 "reference needs to be assigned to a variable."
 msgstr ""
+"Tenga en cuenta que cuando Python evalúa una lista, se devuelve la "
+"lista. Sin embargo, para recordar la lista para un procesamiento "
+"posterior, su referencia debe asignarse a una variable."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:178
 msgid ""
 "Since lists are considered to be sequentially ordered, they support a "
-"number of operations that can be applied to any Python sequence. "
-":ref:`Table 2 <tab_sequence>` reviews these operations and the following "
+"number of operations that can be applied to any Python sequence. :ref:"
+"`Table 2 <tab_sequence>` reviews these operations and the following "
 "session gives examples of their use."
 msgstr ""
+"Dado que las listas se consideran ordenadas secuencialmente, admiten "
+"varias operaciones que se pueden aplicar a cualquier secuencia de "
+"Python. : Ref: `Tabla 2 <tab_sequence>` revisa estas operaciones y la "
+"siguiente sesión da ejemplos de su uso."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:185
 msgid "**Table 2: Operations on Any Sequence in Python**"
-msgstr ""
+msgstr "**Tabla 2: Operaciones en cualquier secuencia en Python**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:190
 msgid "indexing"
-msgstr ""
+msgstr "indexación"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:190
 msgid "[ ]"
-msgstr ""
+msgstr "[ ]"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:190
 msgid "Access an element of a sequence"
-msgstr ""
+msgstr "Acceder a un elemento de una secuencia"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:191
 msgid "concatenation"
-msgstr ""
+msgstr "concatenación"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:191
 msgid "\\+"
-msgstr ""
+msgstr "\\+"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:191
 msgid "Combine sequences together"
-msgstr ""
+msgstr "Combinar secuencias entre sí"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:192
 msgid "repetition"
-msgstr ""
+msgstr "repetición"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:192
 msgid "\\*"
-msgstr ""
+msgstr "\\*"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:192
 msgid "Concatenate a repeated number of times"
-msgstr ""
+msgstr "Concatenar un número repetido de veces"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:193
 #: ../../_sources/Introduction/GettingStartedwithData.rst:475
 msgid "membership"
-msgstr ""
+msgstr "miembros de "
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:193
 #: ../../_sources/Introduction/GettingStartedwithData.rst:475
 msgid "in"
-msgstr ""
+msgstr "en"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:193
 msgid "Ask whether an item is in a sequence"
-msgstr ""
+msgstr "Pregunta si un elemento está en una secuencia"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:194
 #: ../../_sources/Introduction/GettingStartedwithData.rst:476
 msgid "length"
-msgstr ""
+msgstr "longitud"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:194
 #: ../../_sources/Introduction/GettingStartedwithData.rst:476
 msgid "len"
-msgstr ""
+msgstr "len"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:194
 msgid "Ask the number of items in the sequence"
-msgstr ""
+msgstr "Pregunta el número de elementos en la secuencia"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:195
 msgid "slicing"
-msgstr ""
+msgstr "cadena"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:195
 msgid "[ : ]"
-msgstr ""
+msgstr "[ : ]"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:195
 msgid "Extract a part of a sequence"
-msgstr ""
+msgstr "Extrae parte de una secuencia"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:199
 msgid ""
@@ -443,12 +560,18 @@ msgid ""
 "slice operation, myList[1:3], returns a list of items starting with the "
 "item indexed by 1 up to but not including the item indexed by 3."
 msgstr ""
+"Tenga en cuenta que los índices de listas (secuencias) empiezan a contar "
+"con 0. La operación de corte, myList [1: 3], devuelve una lista de "
+"elementos que comienzan con el elemento indexado por 1 hasta el elemento "
+"indexado por 3."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:203
 msgid ""
 "Sometimes, you will want to initialize a list. This can quickly be "
 "accomplished by using repetition. For example,"
 msgstr ""
+"A veces, usted querrá inicializar una lista. Esto se puede lograr "
+"rápidamente usando la repetición. Por ejemplo,"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:208
 msgid ""
@@ -456,17 +579,24 @@ msgid ""
 ">>> myList\n"
 "[0, 0, 0, 0, 0, 0]"
 msgstr ""
+">>> myList = [0] * 6\n"
+">>> myList\n"
+"[0, 0, 0, 0, 0, 0]"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:212
 msgid ""
 "One very important aside relating to the repetition operator is that the "
-"result is a repetition of references to the data objects in the sequence."
-" This can best be seen by considering the following session:"
+"result is a repetition of references to the data objects in the "
+"sequence. This can best be seen by considering the following session:"
 msgstr ""
+"Un aspecto muy importante relacionado con el operador de repetición es "
+"que el resultado es una repetición de referencias a los objetos de datos "
+"en la secuencia. Esto se puede ver mejor considerando la siguiente "
+"sesión:"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:225
 msgid "data-caption='Repetition of References'"
-msgstr ""
+msgstr "data-caption = 'Repetición de referencias'"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:225
 msgid ""
@@ -476,31 +606,42 @@ msgid ""
 "myList[2]=45\n"
 "print(A)"
 msgstr ""
+"myList = [1,2,3,4]\n"
+"A = [myList]*3\n"
+"print(A)\n"
+"myList[2]=45\n"
+"print(A)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:226
 msgid ""
-"The variable ``A`` holds a collection of three references to the original"
-" list called ``myList``. Note that a change to one element of ``myList`` "
-"shows up in all three occurrences in ``A``."
+"The variable ``A`` holds a collection of three references to the "
+"original list called ``myList``. Note that a change to one element of "
+"``myList`` shows up in all three occurrences in ``A``."
 msgstr ""
+"La variable `` A`` contiene una colección de tres referencias a la lista "
+"original llamada `` myList``. Tenga en cuenta que un cambio a un "
+"elemento de `` myList`` aparece en las tres ocurrencias en `` A``."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:230
 msgid ""
 "Lists support a number of methods that will be used to build data "
-"structures. :ref:`Table 3 <tab_listmethods>` provides a summary. Examples"
-" of their use follow."
+"structures. :ref:`Table 3 <tab_listmethods>` provides a summary. "
+"Examples of their use follow."
 msgstr ""
+"Las listas admiten varios métodos que se utilizarán para crear "
+"estructuras de datos. : Ref: `Tabla 3 <tab_listmethods>` proporciona un "
+"resumen. Siguen ejemplos de su uso."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:236
 msgid "**Table 3: Methods Provided by Lists in Python**"
-msgstr ""
+msgstr "**Tabla 3: Métodos proporcionados por Listas en Python**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:239
 #: ../../_sources/Introduction/GettingStartedwithData.rst:378
 #: ../../_sources/Introduction/GettingStartedwithData.rst:507
 #: ../../_sources/Introduction/GettingStartedwithData.rst:644
 msgid "**Method Name**"
-msgstr ""
+msgstr "**Nombre del método**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:239
 #: ../../_sources/Introduction/GettingStartedwithData.rst:378
@@ -508,133 +649,133 @@ msgstr ""
 #: ../../_sources/Introduction/GettingStartedwithData.rst:608
 #: ../../_sources/Introduction/GettingStartedwithData.rst:644
 msgid "**Use**"
-msgstr ""
+msgstr "**Uso**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:241
 msgid "``append``"
-msgstr ""
+msgstr "``append``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:241
 msgid "``alist.append(item)``"
-msgstr ""
+msgstr "``alist.append(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:241
 msgid "Adds a new item to the end of a list"
-msgstr ""
+msgstr "Agrega un nuevo elemento al final de una lista"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:242
 msgid "``insert``"
-msgstr ""
+msgstr "``insert``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:242
 msgid "``alist.insert(i,item)``"
-msgstr ""
+msgstr "``alist.insert(i,item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:242
 msgid "Inserts an item at the ith position in a list"
-msgstr ""
+msgstr "Inserta un elemento en la i-ésima posición en una lista"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:243
 #: ../../_sources/Introduction/GettingStartedwithData.rst:244
 #: ../../_sources/Introduction/GettingStartedwithData.rst:515
 msgid "``pop``"
-msgstr ""
+msgstr "``pop``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:243
 msgid "``alist.pop()``"
-msgstr ""
+msgstr "``alist.pop()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:243
 msgid "Removes and returns the last item in a list"
-msgstr ""
+msgstr "Elimina y devuelve el último elemento de una lista"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:244
 msgid "``alist.pop(i)``"
-msgstr ""
+msgstr "``alist.pop(i)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:244
 msgid "Removes and returns the ith item in a list"
-msgstr ""
+msgstr "Elimina y devuelve el i-ésimo ítem en una lista"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:245
 msgid "``sort``"
-msgstr ""
+msgstr "``sort``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:245
 msgid "``alist.sort()``"
-msgstr ""
+msgstr "``alist.sort()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:245
 msgid "Modifies a list to be sorted"
-msgstr ""
+msgstr "Modifica una lista para ordenarla"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:246
 msgid "``reverse``"
-msgstr ""
+msgstr "``reverse``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:246
 msgid "``alist.reverse()``"
-msgstr ""
+msgstr "``alist.reverse()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:246
 msgid "Modifies a list to be in reverse order"
-msgstr ""
+msgstr "Modifica una lista para que esté en orden inverso"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:247
 #: ../../_sources/Introduction/GettingStartedwithData.rst:612
 msgid "``del``"
-msgstr ""
+msgstr "``del``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:247
 msgid "``del alist[i]``"
-msgstr ""
+msgstr "``del alist[i]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:247
 msgid "Deletes the item in the ith position"
-msgstr ""
+msgstr "Elimina el elemento en la i-ésima posición"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:248
 msgid "``index``"
-msgstr ""
+msgstr "``index``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:248
 msgid "``alist.index(item)``"
-msgstr ""
+msgstr "``alist.index(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:248
 #: ../../_sources/Introduction/GettingStartedwithData.rst:385
 msgid "Returns the index of the first occurrence of ``item``"
-msgstr ""
+msgstr "Devuelve el índice de la primera aparición de `` item``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:249
 #: ../../_sources/Introduction/GettingStartedwithData.rst:381
 msgid "``count``"
-msgstr ""
+msgstr "``count``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:249
 msgid "``alist.count(item)``"
-msgstr ""
+msgstr "``alist.count(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:249
 msgid "Returns the number of occurrences of ``item``"
-msgstr ""
+msgstr "Devuelve el número de apariciones de `` item``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:250
 #: ../../_sources/Introduction/GettingStartedwithData.rst:514
 msgid "``remove``"
-msgstr ""
+msgstr "``remove``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:250
 msgid "``alist.remove(item)``"
-msgstr ""
+msgstr "``alist.remove(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:250
 msgid "Removes the first occurrence of ``item``"
-msgstr ""
+msgstr "Elimina la primera aparición de `` item``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:279
 msgid "data-caption='Examples of List Methods'"
-msgstr ""
+msgstr "data-caption = 'Ejemplos de métodos de lista'"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:279
 msgid ""
@@ -660,11 +801,32 @@ msgid ""
 "del myList[0]\n"
 "print(myList)"
 msgstr ""
+"myList = [1024, 3, True, 6.5]\n"
+"myList.append(False)\n"
+"print(myList)\n"
+"myList.insert(2,4.5)\n"
+"print(myList)\n"
+"print(myList.pop())\n"
+"print(myList)\n"
+"print(myList.pop(1))\n"
+"print(myList)\n"
+"myList.pop(2)\n"
+"print(myList)\n"
+"myList.sort()\n"
+"print(myList)\n"
+"myList.reverse()\n"
+"print(myList)\n"
+"print(myList.count(6.5))\n"
+"print(myList.index(4.5))\n"
+"myList.remove(6.5)\n"
+"print(myList)\n"
+"del myList[0]\n"
+"print(myList)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:280
 msgid ""
-"You can see that some of the methods, such as ``pop``, return a value and"
-" also modify the list. Others, such as ``reverse``, simply modify the "
+"You can see that some of the methods, such as ``pop``, return a value "
+"and also modify the list. Others, such as ``reverse``, simply modify the "
 "list with no return value. ``pop`` will default to the end of the list "
 "but can also remove and return a specific item. The index range starting "
 "from 0 is again used for these methods. You should also notice the "
@@ -673,6 +835,17 @@ msgid ""
 "perform its ``append`` method and send it the value ``False``.” Even "
 "simple data objects such as integers can invoke methods in this way."
 msgstr ""
+"Puede ver que algunos de los métodos, como `` pop``, devuelven un valor "
+"y también modifican la lista. Otros, como `` reverse``, simplemente "
+"modifican la lista sin valor de retorno. `` Pop`` aparecerá por defecto "
+"al final de la lista, pero también puede eliminar y devolver un elemento "
+"específico. El intervalo de índices que comienza a partir de 0 se "
+"utiliza de nuevo para estos métodos. También debe notar la notación "
+"familiar de \"punto\" para pedir a un objeto que invoque un método. `` "
+"MyList.append (False) `` puede ser leído como \"pida al objeto` "
+"`myList`` que realice su método` `append`` y envíenle el valor` "
+"`False``. Incluso objetos de datos simples como Los enteros pueden "
+"invocar métodos de esta manera."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:292
 msgid ""
@@ -680,6 +853,9 @@ msgid ""
 "75\n"
 ">>>"
 msgstr ""
+">>> (54).__add__(21)\n"
+"75\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:296
 msgid ""
@@ -689,6 +865,11 @@ msgid ""
 "write this as ``54+21``. We will say much more about these methods later "
 "in this section."
 msgstr ""
+"En este fragmento pedimos al objeto entero `` 54`` que ejecute su método "
+"`` add`` (llamado `` __add__`` en Python) y lo pasemos `` 21`` como el "
+"valor a añadir. El resultado es la suma, `` 75``. Por supuesto, solemos "
+"escribir esto como \"54 + 21\". Vamos a decir mucho más sobre estos "
+"métodos más adelante en esta sección."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:302
 msgid ""
@@ -698,6 +879,11 @@ msgid ""
 "possible to see the value of the range object as a list. This is "
 "illustrated below."
 msgstr ""
+"Una función común de Python que se discute a menudo junto con las listas "
+"es la función `` range``. `` Range`` produce un objeto range que "
+"representa una secuencia de valores. Mediante el uso de la función `` "
+"list``, es posible ver el valor del objeto range como una lista. Esto se "
+"ilustra a continuación."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:310
 msgid ""
@@ -715,6 +901,19 @@ msgid ""
 "[10, 9, 8, 7, 6, 5, 4, 3, 2]\n"
 ">>>"
 msgstr ""
+">>> range(10)\n"
+"range(0, 10)\n"
+">>> list(range(10))\n"
+"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+">>> range(5,10)\n"
+"range(5, 10)\n"
+">>> list(range(5,10))\n"
+"[5, 6, 7, 8, 9]\n"
+">>> list(range(5,10,2))\n"
+"[5, 7, 9]\n"
+">>> list(range(10,1,-1))\n"
+"[10, 9, 8, 7, 6, 5, 4, 3, 2]\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:324
 msgid ""
@@ -726,6 +925,14 @@ msgid ""
 "up to but not including 10. ``range(5,10,2)`` performs similarly but "
 "skips by twos (again, 10 is not included)."
 msgstr ""
+"El objeto de rango representa una secuencia de enteros. De forma "
+"predeterminada, se iniciará con 0. Si se proporcionan más parámetros, se "
+"iniciará y finalizará en determinados puntos e incluso puede saltar "
+"elementos. En nuestro primer ejemplo, `` range (10) ``, la secuencia "
+"comienza con 0 y va hasta pero no incluye 10. En nuestro segundo "
+"ejemplo, `` range (5,10) `` comienza en 5 y sube A, pero sin incluir 10. "
+"`` rango (5,10,2) `` funciona de manera similar, pero salta por dos "
+"(nuevamente, 10 no está incluido)."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:332
 msgid ""
@@ -734,6 +941,10 @@ msgid ""
 "*characters*. Literal string values are differentiated from identifiers "
 "by using quotation marks (either single or double)."
 msgstr ""
+"** Las cadenas ** son colecciones secuenciales de cero o más letras, "
+"números y otros símbolos. Llamamos a estas letras, números y otros "
+"símbolos * caracteres *. Los valores de las cadenas literales se "
+"diferencian de los identificadores mediante comillas (simples o dobles)."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:339
 msgid ""
@@ -748,6 +959,16 @@ msgid ""
 "5\n"
 ">>>"
 msgstr ""
+">>> \"David\"\n"
+"'David'\n"
+">>> myName = \"David\"\n"
+">>> myName[3]\n"
+"'i'\n"
+">>> myName*2\n"
+"'DavidDavid'\n"
+">>> len(myName)\n"
+"5\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:350
 msgid ""
@@ -756,6 +977,10 @@ msgid ""
 "methods, some of which are shown in :ref:`Table 4<tab_stringmethods>`. "
 "For example,"
 msgstr ""
+"Dado que las cadenas son secuencias, todas las operaciones de secuencia "
+"descritas anteriormente funcionan como cabría esperar. Además, las "
+"cadenas tienen una serie de métodos, algunos de los cuales se muestran "
+"en: ref: `Tabla 4 <tab_stringmethods>`. Por ejemplo,"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:356
 msgid ""
@@ -770,95 +995,114 @@ msgid ""
 ">>> myName.split('v')\n"
 "['Da', 'id']"
 msgstr ""
+">>> myName\n"
+"'David'\n"
+">>> myName.upper()\n"
+"'DAVID'\n"
+">>> myName.center(10)\n"
+"'  David   '\n"
+">>> myName.find('v')\n"
+"2\n"
+">>> myName.split('v')\n"
+"['Da', 'id']"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:367
 msgid ""
 "Of these, ``split`` will be very useful for processing data. ``split`` "
-"will take a string and return a list of strings using the split character"
-" as a division point. In the example, ``v`` is the division point. If no "
-"division is specified, the split method looks for whitespace characters "
-"such as tab, newline and space."
+"will take a string and return a list of strings using the split "
+"character as a division point. In the example, ``v`` is the division "
+"point. If no division is specified, the split method looks for "
+"whitespace characters such as tab, newline and space."
 msgstr ""
+"De estos, `` split`` será muy útil para el procesamiento de datos. `` "
+"Split`` tomará una cadena y devolverá una lista de cadenas usando el "
+"carácter dividido como un punto de división. En el ejemplo, `` v`` es el "
+"punto de división. Si no se especifica ninguna división, el método split "
+"busca caracteres de espacios en blanco como tabulación, nueva línea y "
+"espacio."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:375
 msgid "**Table 4: Methods Provided by Strings in Python**"
-msgstr ""
+msgstr "**Tabla 4: Métodos proporcionados por cadenas en Python**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:380
 msgid "``center``"
-msgstr ""
+msgstr "``center``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:380
 msgid "``astring.center(w)``"
-msgstr ""
+msgstr "``astring.center(w)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:380
 msgid "Returns a string centered in a field of size ``w``"
-msgstr ""
+msgstr "Devuelve una cadena centrada en un campo de tamaño `` w``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:381
 msgid "``astring.count(item)``"
-msgstr ""
+msgstr "``astring.count(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:381
 msgid "Returns the number of occurrences of ``item`` in the string"
-msgstr ""
+msgstr "Devuelve el número de ocurrencias de `` item`` en la cadena"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:382
 msgid "``ljust``"
-msgstr ""
+msgstr "``ljust``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:382
 msgid "``astring.ljust(w)``"
-msgstr ""
+msgstr "``astring.ljust(w)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:382
 msgid "Returns a string left-justified in a field of size ``w``"
 msgstr ""
+"Devuelve una cadena justificada a la izquierda en un campo de tamaño `` "
+"w``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:383
 msgid "``lower``"
-msgstr ""
+msgstr "``lower``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:383
 msgid "``astring.lower()``"
-msgstr ""
+msgstr "``astring.lower()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:383
 msgid "Returns a string in all lowercase"
-msgstr ""
+msgstr "Devuelve una cadena en minúsculas"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:384
 msgid "``rjust``"
-msgstr ""
+msgstr "``rjust``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:384
 msgid "``astring.rjust(w)``"
-msgstr ""
+msgstr "``astring.rjust(w)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:384
 msgid "Returns a string right-justified in a field of size ``w``"
 msgstr ""
+"Devuelve una cadena justificada a la derecha en un campo de tamaño `` w``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:385
 msgid "``find``"
-msgstr ""
+msgstr "``find``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:385
 msgid "``astring.find(item)``"
-msgstr ""
+msgstr "``astring.find(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:386
 msgid "``split``"
-msgstr ""
+msgstr "``split``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:386
 msgid "``astring.split(schar)``"
-msgstr ""
+msgstr "``astring.split(schar)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:386
 msgid "Splits a string into substrings at ``schar``"
-msgstr ""
+msgstr "Divide una cadena en subcadenas en `` schar``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:390
 msgid ""
@@ -868,6 +1112,12 @@ msgid ""
 "item in a list by using indexing and assignment. With a string that "
 "change is not allowed."
 msgstr ""
+"Una diferencia importante entre listas y cadenas es que las listas se "
+"pueden modificar mientras que las cadenas no pueden. Esto se conoce como "
+"** mutabilidad **. Las listas son mutables; Las cadenas son inmutables. "
+"Por ejemplo, puede cambiar un elemento de una lista mediante la "
+"indexación y la asignación. Con una cadena que el cambio no está "
+"permitido."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:398
 msgid ""
@@ -887,15 +1137,35 @@ msgid ""
 "TypeError: object doesn't support item assignment\n"
 ">>>"
 msgstr ""
+">>> myList\n"
+"[1, 3, True, 6.5]\n"
+">>> myList[0]=2**10\n"
+">>> myList\n"
+"[1024, 3, True, 6.5]\n"
+">>>\n"
+">>> myName\n"
+"'David'\n"
+">>> myName[0]='X'\n"
+"\n"
+"Traceback (most recent call last):\n"
+"  File \"<pyshell#84>\", line 1, in -toplevel-\n"
+"    myName[0]='X'\n"
+"TypeError: object doesn't support item assignment\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:414
 msgid ""
-"Tuples are very similar to lists in that they are heterogeneous sequences"
-" of data. The difference is that a tuple is immutable, like a string. A "
-"tuple cannot be changed. Tuples are written as comma-delimited values "
-"enclosed in parentheses. As sequences, they can use any operation "
+"Tuples are very similar to lists in that they are heterogeneous "
+"sequences of data. The difference is that a tuple is immutable, like a "
+"string. A tuple cannot be changed. Tuples are written as comma-delimited "
+"values enclosed in parentheses. As sequences, they can use any operation "
 "described above. For example,"
 msgstr ""
+"Las tuplas son muy similares a las listas en que son secuencias "
+"heterogéneas de datos. La diferencia es que una tupla es inmutable, como "
+"una cadena. No se puede cambiar una tupla. Las tuplas se escriben como "
+"valores delimitados por comas entre paréntesis. Como secuencias, pueden "
+"utilizar cualquier operación descrita anteriormente. Por ejemplo,"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:422
 msgid ""
@@ -912,12 +1182,27 @@ msgid ""
 "(2, True)\n"
 ">>>"
 msgstr ""
+">>> myTuple = (2,True,4.96)\n"
+">>> myTuple\n"
+"(2, True, 4.96)\n"
+">>> len(myTuple)\n"
+"3\n"
+">>> myTuple[0]\n"
+"2\n"
+">>> myTuple * 3\n"
+"(2, True, 4.96, 2, True, 4.96, 2, True, 4.96)\n"
+">>> myTuple[0:2]\n"
+"(2, True)\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:435
 msgid ""
 "However, if you try to change an item in a tuple, you will get an error. "
 "Note that the error message provides location and reason for the problem."
 msgstr ""
+"Sin embargo, si intenta cambiar un elemento en una tupla, obtendrá un "
+"error. Tenga en cuenta que el mensaje de error proporciona la ubicación "
+"y la razón del problema."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:441
 msgid ""
@@ -929,6 +1214,13 @@ msgid ""
 "TypeError: object doesn't support item assignment\n"
 ">>>"
 msgstr ""
+">>> myTuple[1]=False\n"
+"\n"
+"Traceback (most recent call last):\n"
+"  File \"<pyshell#137>\", line 1, in -toplevel-\n"
+"    myTuple[1]=False\n"
+"TypeError: object doesn't support item assignment\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:449
 msgid ""
@@ -938,6 +1230,11 @@ msgid ""
 "``set()``. Sets are heterogeneous, and the collection can be assigned to "
 "a variable as below."
 msgstr ""
+"Un conjunto es una colección desordenada de objetos de datos Python cero "
+"o más inmutable. Los conjuntos no permiten duplicados y se escriben como "
+"valores delimitados por comas entre corchetes. El conjunto vacío está "
+"representado por `` set () ``. Los conjuntos son heterogéneos y la "
+"colección se puede asignar a una variable como se muestra a continuación."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:457
 msgid ""
@@ -948,6 +1245,12 @@ msgid ""
 "{False, 4.5, 3, 6, 'cat'}\n"
 ">>>"
 msgstr ""
+">>> {3,6,\"cat\",4.5,False}\n"
+"{False, 4.5, 3, 6, 'cat'}\n"
+">>> mySet = {3,6,\"cat\",4.5,False}\n"
+">>> mySet\n"
+"{False, 4.5, 3, 6, 'cat'}\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:464
 msgid ""
@@ -956,68 +1259,78 @@ msgid ""
 "<tab_setops>` reviews these operations and the following session gives "
 "examples of their use."
 msgstr ""
+"Aunque los conjuntos no se consideran secuenciales, sí apoyan algunas de "
+"las operaciones conocidas presentadas anteriormente. : Ref: `Tabla 5 "
+"<tab_setops>` revisa estas operaciones y la siguiente sesión da ejemplos "
+"de su uso."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:470
 msgid "**Table 5: Operations on a Set in Python**"
-msgstr ""
+msgstr "**Tabla 5: Operaciones en un conjunto en Python**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:475
 msgid "Set membership"
-msgstr ""
+msgstr "Establecer pertenencia (ser miembro)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:476
 msgid "Returns the cardinality of the set"
-msgstr ""
+msgstr "Devuelve la cardinalidad del conjunto"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:477
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:477
 msgid "``aset | otherset``"
-msgstr ""
+msgstr "``aset | otherset``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:477
 #: ../../_sources/Introduction/GettingStartedwithData.rst:509
 msgid "Returns a new set with all elements from both sets"
 msgstr ""
+"Devuelve un nuevo conjunto con todos los elementos de ambos conjuntos"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:478
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:478
 msgid "``aset & otherset``"
-msgstr ""
+msgstr "``aset & otherset``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:478
 #: ../../_sources/Introduction/GettingStartedwithData.rst:510
 msgid "Returns a new set with only those elements common to both sets"
 msgstr ""
+"Devuelve un nuevo conjunto con sólo los elementos comunes a ambos "
+"conjuntos"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:479
 msgid "``-``"
-msgstr ""
+msgstr "``-``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:479
 msgid "``aset - otherset``"
-msgstr ""
+msgstr "``aset - otherset``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:479
 msgid "Returns a new set with all items from the first set not in second"
 msgstr ""
+"Devuelve un nuevo conjunto con todos los elementos del primer conjunto "
+"no en el segundo"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:480
 msgid "``<=``"
-msgstr ""
+msgstr "``<=``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:480
 msgid "``aset <= otherset``"
-msgstr ""
+msgstr "``aset <= otherset``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:480
 msgid "Asks whether all elements of  the first set are in the second"
 msgstr ""
+"Pregunta si todos los elementos del primer conjunto están en el segundo"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:486
 msgid ""
@@ -1031,6 +1344,15 @@ msgid ""
 "False\n"
 ">>>"
 msgstr ""
+">>> mySet\n"
+"{False, 4.5, 3, 6, 'cat'}\n"
+">>> len(mySet)\n"
+"5\n"
+">>> False in mySet\n"
+"True\n"
+">>> \"dog\" in mySet\n"
+"False\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:496
 msgid ""
@@ -1040,62 +1362,70 @@ msgid ""
 "that ``union``, ``intersection``, ``issubset``, and ``difference`` all "
 "have operators that can be used as well."
 msgstr ""
+"Los conjuntos soportan una serie de métodos que deben ser familiares "
+"para aquellos que han trabajado con ellos en un entorno de "
+"matemáticas. : Ref: `Tabla 6 <tab_setmethods>` proporciona un resumen. "
+"Siguen ejemplos de su uso. Tenga en cuenta que `` union``, `` "
+"intersection``, `` issubset`` y `` difference`` tienen operadores que "
+"también se pueden usar."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:504
 msgid "**Table 6: Methods Provided by Sets in Python**"
-msgstr ""
+msgstr "**Tabla 6: Métodos proporcionados por conjuntos en Python**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:509
 msgid "``union``"
-msgstr ""
+msgstr "``union``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:509
 msgid "``aset.union(otherset)``"
-msgstr ""
+msgstr "``aset.union(otherset)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:510
 msgid "``intersection``"
-msgstr ""
+msgstr "``intersection``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:510
 msgid "``aset.intersection(otherset)``"
-msgstr ""
+msgstr "``aset.intersection(otherset)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:511
 msgid "``difference``"
-msgstr ""
+msgstr "``difference``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:511
 msgid "``aset.difference(otherset)``"
-msgstr ""
+msgstr "``aset.difference(otherset)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:511
 msgid "Returns a new set with all items from first set not in second"
 msgstr ""
+"Devuelve un nuevo conjunto con todos los elementos del primer conjunto "
+"no en el segundo"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:512
 msgid "``issubset``"
-msgstr ""
+msgstr "``issubset``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:512
 msgid "``aset.issubset(otherset)``"
-msgstr ""
+msgstr "``aset.issubset(otherset)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:512
 msgid "Asks whether all elements of one set are in the other"
-msgstr ""
+msgstr "Pregunta si todos los elementos de un conjunto están en el otro"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:513
 msgid "``add``"
-msgstr ""
+msgstr "``add``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:513
 msgid "``aset.add(item)``"
-msgstr ""
+msgstr "``aset.add(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:513
 msgid "Adds item to the set"
-msgstr ""
+msgstr "Añade un elemento al conjunto"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:514
 msgid "``aset.remove(item)``"
@@ -1103,27 +1433,27 @@ msgstr ""
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:514
 msgid "Removes item from the set"
-msgstr ""
+msgstr "Elimina el elemento del conjunto"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:515
 msgid "``aset.pop()``"
-msgstr ""
+msgstr "``aset.pop()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:515
 msgid "Removes an arbitrary element from the set"
-msgstr ""
+msgstr "Elimina un elemento arbitrario del conjunto"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:516
 msgid "``clear``"
-msgstr ""
+msgstr "``clear``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:516
 msgid "``aset.clear()``"
-msgstr ""
+msgstr "``aset.clear()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:516
 msgid "Removes all elements from the set"
-msgstr ""
+msgstr "Elimina todos los elementos del conjunto"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:522
 msgid ""
@@ -1161,15 +1491,54 @@ msgid ""
 "set()\n"
 ">>>"
 msgstr ""
+">>> mySet\n"
+"{False, 4.5, 3, 6, 'cat'}\n"
+">>> yourSet = {99,3,100}\n"
+">>> mySet.union(yourSet)\n"
+"{False, 4.5, 3, 100, 6, 'cat', 99}\n"
+">>> mySet | yourSet\n"
+"{False, 4.5, 3, 100, 6, 'cat', 99}\n"
+">>> mySet.intersection(yourSet)\n"
+"{3}\n"
+">>> mySet & yourSet\n"
+"{3}\n"
+">>> mySet.difference(yourSet)\n"
+"{False, 4.5, 6, 'cat'}\n"
+">>> mySet - yourSet\n"
+"{False, 4.5, 6, 'cat'}\n"
+">>> {3,100}.issubset(yourSet)\n"
+"True\n"
+">>> {3,100}<=yourSet\n"
+"True\n"
+">>> mySet.add(\"house\")\n"
+">>> mySet\n"
+"{False, 4.5, 3, 6, 'house', 'cat'}\n"
+">>> mySet.remove(4.5)\n"
+">>> mySet\n"
+"{False, 3, 6, 'house', 'cat'}\n"
+">>> mySet.pop()\n"
+"False\n"
+">>> mySet\n"
+"{3, 6, 'house', 'cat'}\n"
+">>> mySet.clear()\n"
+">>> mySet\n"
+"set()\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:556
 msgid ""
 "Our final Python collection is an unordered structure called a "
-"**dictionary**. Dictionaries are collections of associated pairs of items"
-" where each pair consists of a key and a value. This key-value pair is "
-"typically written as key:value. Dictionaries are written as comma-"
+"**dictionary**. Dictionaries are collections of associated pairs of "
+"items where each pair consists of a key and a value. This key-value pair "
+"is typically written as key:value. Dictionaries are written as comma-"
 "delimited key:value pairs enclosed in curly braces. For example,"
 msgstr ""
+"Nuestra colección final de Python es una estructura desordenada llamada "
+"** diccionario **. Los diccionarios son colecciones de pares asociados "
+"de elementos en los que cada par consta de una clave y un valor. Este "
+"par clave-valor suele escribirse como clave: valor. Los diccionarios se "
+"escriben como clave delimitada por comas: pares de valores encerrados "
+"entre llaves. Por ejemplo,"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:564
 msgid ""
@@ -1178,18 +1547,27 @@ msgid ""
 "{'Wisconsin': 'Madison', 'Iowa': 'DesMoines'}\n"
 ">>>"
 msgstr ""
+">>> capitals = {'Iowa':'DesMoines','Wisconsin':'Madison'}\n"
+">>> capitals\n"
+"{'Wisconsin': 'Madison', 'Iowa': 'DesMoines'}\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:569
 msgid ""
 "We can manipulate a dictionary by accessing a value via its key or by "
 "adding another key-value pair. The syntax for access looks much like a "
-"sequence access except that instead of using the index of the item we use"
-" the key value. To add a new value is similar."
+"sequence access except that instead of using the index of the item we "
+"use the key value. To add a new value is similar."
 msgstr ""
+"Podemos manipular un diccionario accediendo a un valor a través de su "
+"clave o añadiendo otro par clave-valor. La sintaxis para el acceso se "
+"parece mucho a un acceso de secuencia, excepto que en lugar de utilizar "
+"el índice del elemento que utilizamos el valor de la clave. Para agregar "
+"un nuevo valor es similar."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:585
 msgid "data-caption='Using a Dictionary'"
-msgstr ""
+msgstr "data-caption = 'Uso de un diccionario'"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:585
 msgid ""
@@ -1202,6 +1580,14 @@ msgid ""
 "for k in capitals:\n"
 "   print(capitals[k],\" is the capital of \", k)"
 msgstr ""
+"capitals = {'Iowa':'DesMoines','Wisconsin':'Madison'}\n"
+"print(capitals['Iowa'])\n"
+"capitals['Utah']='SaltLakeCity'\n"
+"print(capitals)\n"
+"capitals['California']='Sacramento'\n"
+"print(len(capitals))\n"
+"for k in capitals:\n"
+"   print(capitals[k],\" is the capital of \", k)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:586
 msgid ""
@@ -1209,58 +1595,80 @@ msgid ""
 "particular order with respect to the keys. The first pair added "
 "(``'Utah':`` ``'SaltLakeCity'``) was placed first in the dictionary and "
 "the second pair added (``'California':`` ``'Sacramento'``) was placed "
-"last. The placement of a key is dependent on the idea of “hashing,” which"
-" will be explained in more detail in Chapter 4. We also show the length "
-"function performing the same role as with previous collections."
+"last. The placement of a key is dependent on the idea of “hashing,” "
+"which will be explained in more detail in Chapter 4. We also show the "
+"length function performing the same role as with previous collections."
 msgstr ""
+"Es importante tener en cuenta que el diccionario se mantiene sin orden "
+"particular con respecto a las teclas. El primer par añadido (`` Utah ': "
+"`` `` `SaltLakeCity'``) fue colocado en primer lugar en el diccionario y "
+"el segundo par añadido (` `` `` `` `` `'Sacramento'`` de California) fue "
+"Colocado en último lugar. La colocación de una clave depende de la idea "
+"de \"hashing\", que se explicará con más detalle en el Capítulo 4. "
+"También mostramos la función de longitud que cumple el mismo papel que "
+"con las colecciones anteriores."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:594
 msgid ""
 "Dictionaries have both methods and operators. :ref:`Table 7 "
 "<tab_dictopers>` and :ref:`Table 8 <tab_dictmethods>` describe them, and "
-"the session shows them in action. The ``keys``, ``values``, and ``items``"
-" methods all return objects that contain the values of interest. You can "
-"use the ``list`` function to convert them to lists. You will also see "
-"that there are two variations on the ``get`` method. If the key is not "
-"present in the dictionary, ``get`` will return ``None``. However, a "
-"second, optional parameter can specify a return value instead."
+"the session shows them in action. The ``keys``, ``values``, and "
+"``items`` methods all return objects that contain the values of "
+"interest. You can use the ``list`` function to convert them to lists. "
+"You will also see that there are two variations on the ``get`` method. "
+"If the key is not present in the dictionary, ``get`` will return "
+"``None``. However, a second, optional parameter can specify a return "
+"value instead."
 msgstr ""
+"Los diccionarios tienen métodos y operadores. : Ref: `Tabla 7 "
+"<tab_dictopers>` y: ref: `Tabla 8 <tab_dictmethods>` describirlos, y la "
+"sesión los muestra en acción. Los métodos `` keys``, `` values`` y `` "
+"items`` todos los objetos de retorno que contienen los valores de "
+"interés. Puede utilizar la función `` list`` para convertirlas en "
+"listas. También verá que hay dos variaciones en el método `` get``. Si "
+"la clave no está presente en el diccionario, `` get`` devolverá `` "
+"None``. Sin embargo, un segundo parámetro opcional puede especificar un "
+"valor devuelto."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:605
 msgid "**Table 7: Operators Provided by Dictionaries in Python**"
 msgstr ""
+"**Tabla 7: Operadores proporcionados por los diccionarios en Python**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:610
 msgid "``[]``"
-msgstr ""
+msgstr "``[]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:610
 msgid "``myDict[k]``"
-msgstr ""
+msgstr "``myDict[k]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:610
 msgid "Returns the value associated with ``k``, otherwise its an error"
 msgstr ""
+"Devuelve el valor asociado con `` k``, de lo contrario es un error\t"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:611
 msgid "``in``"
-msgstr ""
+msgstr "``in``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:611
 msgid "``key in adict``"
-msgstr ""
+msgstr "``key in adict``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:611
 msgid "Returns ``True`` if key is in the   dictionary, ``False`` otherwise"
 msgstr ""
+"Devuelve `` True`` si la clave está en el diccionario, `` False`` de lo "
+"contrario"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:612
 msgid "del ``adict[key]``"
-msgstr ""
+msgstr "del ``adict[key]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:612
 msgid "Removes the entry from the  dictionary"
-msgstr ""
+msgstr "Elimina la entrada del diccionario"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:619
 msgid ""
@@ -1284,75 +1692,100 @@ msgid ""
 "'NO ENTRY'\n"
 ">>>"
 msgstr ""
+">>> phoneext={'david':1410,'brad':1137}\n"
+">>> phoneext\n"
+"{'brad': 1137, 'david': 1410}\n"
+">>> phoneext.keys()\n"
+"dict_keys(['brad', 'david'])\n"
+">>> list(phoneext.keys())\n"
+"['brad', 'david']\n"
+">>> phoneext.values()\n"
+"dict_values([1137, 1410])\n"
+">>> list(phoneext.values())\n"
+"[1137, 1410]\n"
+">>> phoneext.items()\n"
+"dict_items([('brad', 1137), ('david', 1410)])\n"
+">>> list(phoneext.items())\n"
+"[('brad', 1137), ('david', 1410)]\n"
+">>> phoneext.get(\"kent\")\n"
+">>> phoneext.get(\"kent\",\"NO ENTRY\")\n"
+"'NO ENTRY'\n"
+">>>"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:641
 msgid "**Table 8: Methods Provided by Dictionaries in Python**"
-msgstr ""
+msgstr "**Tabla 8: Métodos proporcionados por los diccionarios en Python**"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:646
 msgid "``keys``"
-msgstr ""
+msgstr "``keys``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:646
 msgid "``adict.keys()``"
-msgstr ""
+msgstr "``adict.keys()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:646
 msgid "Returns the keys of the dictionary in a dict_keys object"
-msgstr ""
+msgstr "Devuelve las claves del diccionario en un objeto dict_keys"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:647
 msgid "``values``"
-msgstr ""
+msgstr "``values``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:647
 msgid "``adict.values()``"
-msgstr ""
+msgstr "``adict.values()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:647
 msgid "Returns the values of the dictionary in a dict_values object"
-msgstr ""
+msgstr "Devuelve los valores del diccionario en un objeto dict_values"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:648
 msgid "``items``"
-msgstr ""
+msgstr "``items``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:648
 msgid "``adict.items()``"
-msgstr ""
+msgstr "``adict.items()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:648
 msgid "Returns the key-value pairs in a dict_items object"
-msgstr ""
+msgstr "Devuelve los pares clave-valor en un objeto dict_items"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:649
 #: ../../_sources/Introduction/GettingStartedwithData.rst:650
 msgid "``get``"
-msgstr ""
+msgstr "``get``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:649
 msgid "``adict.get(k)``"
-msgstr ""
+msgstr "``adict.get(k)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:649
 msgid "Returns the value associated with ``k``, ``None`` otherwise"
-msgstr ""
+msgstr "Devuelve el valor asociado con `` k``, `` None`` de lo contrario"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:650
 msgid "``adict.get(k,alt)``"
-msgstr ""
+msgstr "``adict.get(k,alt)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:650
 msgid "Returns the value associated with ``k``, ``alt`` otherwise"
 msgstr ""
 
+# Carlos Sisek
+# carlos.sisek@gmail.com
+# Diplomatura en Software Libre
+# Universidad del Este
+# 2017
 #: ../../_sources/Introduction/GettingStartedwithData.rst:656
 msgid ""
 "This workspace is provided for your convenience.  You can use this "
 "activecode window to try out anything you like."
 msgstr ""
+"Este espacio de trabajo se proporciona para su conveniencia. Puedes usar "
+"esta ventana de activecode para probar lo que quieras."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:658
 msgid "\n"
 msgstr ""
-
