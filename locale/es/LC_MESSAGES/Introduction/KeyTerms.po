@@ -4,112 +4,114 @@
 # with Algorithms and Data Structures package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Problem Solving with Algorithms and Data Structures "
 "3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-01 14:03-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-08 14:46-0500\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Francisco Silva G. <francisco.silva.garces@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_419\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../../_sources/Introduction/KeyTerms.rst:6
 msgid "Key Terms"
-msgstr ""
+msgstr "Términos Clave"
 
 #: ../../_sources/Introduction/KeyTerms.rst:11
 msgid "abstract data type"
-msgstr ""
+msgstr "tipo de dato abstracto"
 
 #: ../../_sources/Introduction/KeyTerms.rst:11
 msgid "abstraction"
-msgstr ""
+msgstr "abstración"
 
 #: ../../_sources/Introduction/KeyTerms.rst:11
 msgid "algorithm"
-msgstr ""
+msgstr "algoritmo"
 
 #: ../../_sources/Introduction/KeyTerms.rst:12
 msgid "class"
-msgstr ""
+msgstr "clase"
 
 #: ../../_sources/Introduction/KeyTerms.rst:12
 msgid "computable"
-msgstr ""
+msgstr "computable"
 
 #: ../../_sources/Introduction/KeyTerms.rst:12
 msgid "data abstraction"
-msgstr ""
+msgstr "abstracción de dato"
 
 #: ../../_sources/Introduction/KeyTerms.rst:13
 msgid "data structure"
-msgstr ""
+msgstr "estructura de dato"
 
 #: ../../_sources/Introduction/KeyTerms.rst:13
 msgid "data type"
-msgstr ""
+msgstr "tipo de dato"
 
 #: ../../_sources/Introduction/KeyTerms.rst:13
 msgid "deep equality"
-msgstr ""
+msgstr "igualdad profunda"
 
 #: ../../_sources/Introduction/KeyTerms.rst:14
 msgid "dictionary"
-msgstr ""
+msgstr "diccionario"
 
 #: ../../_sources/Introduction/KeyTerms.rst:14
 msgid "encapsulation"
-msgstr ""
+msgstr "encapsulación"
 
 #: ../../_sources/Introduction/KeyTerms.rst:14
 msgid "exception"
-msgstr ""
+msgstr "excepción"
 
 #: ../../_sources/Introduction/KeyTerms.rst:15
 msgid "format operator"
-msgstr ""
+msgstr "operador de formato"
 
 #: ../../_sources/Introduction/KeyTerms.rst:15
 msgid "formatted strings"
-msgstr ""
+msgstr "cadena formateada"
 
 #: ../../_sources/Introduction/KeyTerms.rst:15
 msgid "HAS-A relationship"
-msgstr ""
+msgstr "relación HAS-A"
 
 #: ../../_sources/Introduction/KeyTerms.rst:16
 msgid "implementation-independent"
-msgstr ""
+msgstr "implementación-independiente"
 
 #: ../../_sources/Introduction/KeyTerms.rst:16
 msgid "information hiding"
-msgstr ""
+msgstr "ocultación de información"
 
 #: ../../_sources/Introduction/KeyTerms.rst:16
 msgid "inheritance"
-msgstr ""
+msgstr "herencia"
 
 #: ../../_sources/Introduction/KeyTerms.rst:17
 msgid "inheritance hierarchy"
-msgstr ""
+msgstr "jerarquía de herencia"
 
 #: ../../_sources/Introduction/KeyTerms.rst:17
 msgid "interface"
-msgstr ""
+msgstr "interfaz"
 
 #: ../../_sources/Introduction/KeyTerms.rst:17
 msgid "IS-A relationship"
-msgstr ""
+msgstr "relación IS-A"
 
 #: ../../_sources/Introduction/KeyTerms.rst:18
 msgid "list"
-msgstr ""
+msgstr "lista"
 
 #: ../../_sources/Introduction/KeyTerms.rst:18
 msgid "list comprehension"
@@ -117,27 +119,27 @@ msgstr ""
 
 #: ../../_sources/Introduction/KeyTerms.rst:18
 msgid "method"
-msgstr ""
+msgstr "método"
 
 #: ../../_sources/Introduction/KeyTerms.rst:19
 msgid "mutability"
-msgstr ""
+msgstr "mutabilidad"
 
 #: ../../_sources/Introduction/KeyTerms.rst:19
 msgid "object"
-msgstr ""
+msgstr "objeto"
 
 #: ../../_sources/Introduction/KeyTerms.rst:19
 msgid "procedural abstraction"
-msgstr ""
+msgstr "abstracción procedimental"
 
 #: ../../_sources/Introduction/KeyTerms.rst:20
 msgid "programming"
-msgstr ""
+msgstr "programación"
 
 #: ../../_sources/Introduction/KeyTerms.rst:20
 msgid "prompt"
-msgstr ""
+msgstr "prompt"
 
 #: ../../_sources/Introduction/KeyTerms.rst:20
 msgid "``self``"
@@ -145,25 +147,24 @@ msgstr ""
 
 #: ../../_sources/Introduction/KeyTerms.rst:21
 msgid "shallow equality"
-msgstr ""
+msgstr "igualdad baja"
 
 #: ../../_sources/Introduction/KeyTerms.rst:21
 msgid "simulation"
-msgstr ""
+msgstr "simulación"
 
 #: ../../_sources/Introduction/KeyTerms.rst:21
 msgid "string"
-msgstr ""
+msgstr "cadena"
 
 #: ../../_sources/Introduction/KeyTerms.rst:22
 msgid "subclass"
-msgstr ""
+msgstr "sub clase"
 
 #: ../../_sources/Introduction/KeyTerms.rst:22
 msgid "superclass"
-msgstr ""
+msgstr "super clase"
 
 #: ../../_sources/Introduction/KeyTerms.rst:22
 msgid "truth table"
 msgstr ""
-
