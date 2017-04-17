@@ -4,7 +4,7 @@ msgstr ""
 "3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-01 14:03-0300\n"
-"PO-Revision-Date: 2017-04-06 19:22-0300\n"
+"PO-Revision-Date: 2017-04-17 18:24-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -346,14 +346,14 @@ msgid ""
 ">>> theSum\n"
 "True"
 msgstr ""
-">>> theSum = 0\n"
-">>> theSum\n"
+">>> laSuma = 0\n"
+">>> laSuma\n"
 "0\n"
-">>> theSum = theSum + 1\n"
-">>> theSum\n"
+">>> laSuma = laSuma + 1\n"
+">>> laSuma\n"
 "1\n"
-">>> theSum = True\n"
-">>> theSum\n"
+">>> laSuma = True\n"
+">>> laSuma\n"
 "True"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:123
@@ -372,23 +372,23 @@ msgid ""
 "characteristic of Python. The same variable can refer to many different "
 "types of data."
 msgstr ""
-"La instrucción de asignación `` theSum = 0`` crea una variable llamada "
-"`` theSum`` y permite mantener la referencia al objeto de datos `` 0`` "
-"(ver: ref: `Figura 3 <fig_assignment1>`). En general, se evalúa el lado "
-"derecho de la instrucción de asignación y se asigna una referencia al "
-"objeto de datos resultante al nombre del lado izquierdo. En este punto "
-"de nuestro ejemplo, el tipo de la variable es entero, ya que es el tipo "
-"de los datos a los que se refiere actualmente `` theSum``. Si el tipo de "
-"datos cambia (véase: ref: `Figura 4 <fig_assignment2>`), como se muestra "
-"arriba con el valor booleano `` True``, también el tipo de la variable "
-"(`` theSum`` es ahora de El tipo booleano). La instrucción de asignación "
-"cambia la referencia que está siendo retenida por la variable. Esta es "
-"una característica dinámica de Python. La misma variable puede referirse "
-"a muchos tipos diferentes de datos."
+"La instrucción de asignación `` laSuma = 0`` crea una variable llamada "
+"`` laSuma`` y permite mantener la referencia al objeto de datos `` 0`` "
+"(ver: ref: `Figura 3 <fig_assignment1_es>`). En general, se evalúa el "
+"lado derecho de la instrucción de asignación y se asigna una referencia "
+"al objeto de datos resultante al nombre del lado izquierdo. En este "
+"punto de nuestro ejemplo, el tipo de la variable es entero, ya que es el "
+"tipo de los datos a los que se refiere actualmente `` laSuma``. Si el "
+"tipo de datos cambia (véase: ref: `Figura 4 <fig_assignment2_es>`), como "
+"se muestra arriba con el valor booleano `` True``, también el tipo de la "
+"variable (`` laSuma`` es ahora de El tipo booleano). La instrucción de "
+"asignación cambia la referencia que está siendo retenida por la "
+"variable. Esta es una característica dinámica de Python. La misma "
+"variable puede referirse a muchos tipos diferentes de datos."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:141
 msgid ".. image:: Introduction/Figures/assignment1.png"
-msgstr ".. image:: Introduction/Figures/assignment1.png"
+msgstr ".. image:: Introduction/Figures/assignment1_es.png"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:141
 msgid "Figure 3: Variables Hold References to Data Objects"
@@ -396,7 +396,7 @@ msgstr "Figura 3: Referencias de variables a objetos de datos"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:148
 msgid ".. image:: Introduction/Figures/assignment2.png"
-msgstr ".. image:: Introduction/Figures/assignment2.png"
+msgstr ".. image:: Introduction/Figures/assignment2_es.png"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:148
 msgid "Figure 4: Assignment Changes the Reference"
@@ -448,8 +448,8 @@ msgid ""
 msgstr ""
 ">>> [1,3,True,6.5]\n"
 "[1, 3, True, 6.5]\n"
-">>> myList = [1,3,True,6.5]\n"
-">>> myList\n"
+">>> miLista = [1,3,True,6.5]\n"
+">>> miLista\n"
 "[1, 3, True, 6.5]"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:174
@@ -561,7 +561,7 @@ msgid ""
 "item indexed by 1 up to but not including the item indexed by 3."
 msgstr ""
 "Tenga en cuenta que los índices de listas (secuencias) empiezan a contar "
-"con 0. La operación de corte, myList [1: 3], devuelve una lista de "
+"con 0. La operación de corte, miLista [1: 3], devuelve una lista de "
 "elementos que comienzan con el elemento indexado por 1 hasta el elemento "
 "indexado por 3."
 
@@ -579,8 +579,8 @@ msgid ""
 ">>> myList\n"
 "[0, 0, 0, 0, 0, 0]"
 msgstr ""
-">>> myList = [0] * 6\n"
-">>> myList\n"
+">>> miLista = [0] * 6\n"
+">>> miLista\n"
 "[0, 0, 0, 0, 0, 0]"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:212
@@ -606,10 +606,10 @@ msgid ""
 "myList[2]=45\n"
 "print(A)"
 msgstr ""
-"myList = [1,2,3,4]\n"
-"A = [myList]*3\n"
+"miLista = [1,2,3,4]\n"
+"A = [miLista]*3\n"
 "print(A)\n"
-"myList[2]=45\n"
+"miLista[2]=45\n"
 "print(A)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:226
@@ -619,8 +619,8 @@ msgid ""
 "``myList`` shows up in all three occurrences in ``A``."
 msgstr ""
 "La variable `` A`` contiene una colección de tres referencias a la lista "
-"original llamada `` myList``. Tenga en cuenta que un cambio a un "
-"elemento de `` myList`` aparece en las tres ocurrencias en `` A``."
+"original llamada `` miLista``. Tenga en cuenta que un cambio a un "
+"elemento de `` miLista`` aparece en las tres ocurrencias en `` A``."
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:230
 msgid ""
@@ -657,7 +657,7 @@ msgstr "``append``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:241
 msgid "``alist.append(item)``"
-msgstr "``alist.append(item)``"
+msgstr "``unalista.append(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:241
 msgid "Adds a new item to the end of a list"
@@ -669,7 +669,7 @@ msgstr "``insert``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:242
 msgid "``alist.insert(i,item)``"
-msgstr "``alist.insert(i,item)``"
+msgstr "``unalista.insert(i,item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:242
 msgid "Inserts an item at the ith position in a list"
@@ -683,7 +683,7 @@ msgstr "``pop``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:243
 msgid "``alist.pop()``"
-msgstr "``alist.pop()``"
+msgstr "``unalista.pop()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:243
 msgid "Removes and returns the last item in a list"
@@ -691,7 +691,7 @@ msgstr "Elimina y devuelve el último elemento de una lista"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:244
 msgid "``alist.pop(i)``"
-msgstr "``alist.pop(i)``"
+msgstr "``unalista.pop(i)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:244
 msgid "Removes and returns the ith item in a list"
@@ -703,7 +703,7 @@ msgstr "``sort``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:245
 msgid "``alist.sort()``"
-msgstr "``alist.sort()``"
+msgstr "``unalista.sort()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:245
 msgid "Modifies a list to be sorted"
@@ -715,7 +715,7 @@ msgstr "``reverse``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:246
 msgid "``alist.reverse()``"
-msgstr "``alist.reverse()``"
+msgstr "``unalista.reverse()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:246
 msgid "Modifies a list to be in reverse order"
@@ -728,7 +728,7 @@ msgstr "``del``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:247
 msgid "``del alist[i]``"
-msgstr "``del alist[i]``"
+msgstr "``del unalista[i]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:247
 msgid "Deletes the item in the ith position"
@@ -740,7 +740,7 @@ msgstr "``index``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:248
 msgid "``alist.index(item)``"
-msgstr "``alist.index(item)``"
+msgstr "``unalista.index(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:248
 #: ../../_sources/Introduction/GettingStartedwithData.rst:385
@@ -754,7 +754,7 @@ msgstr "``count``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:249
 msgid "``alist.count(item)``"
-msgstr "``alist.count(item)``"
+msgstr "``unalista.count(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:249
 msgid "Returns the number of occurrences of ``item``"
@@ -767,7 +767,7 @@ msgstr "``remove``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:250
 msgid "``alist.remove(item)``"
-msgstr "``alist.remove(item)``"
+msgstr "``unalista.remove(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:250
 msgid "Removes the first occurrence of ``item``"
@@ -801,27 +801,27 @@ msgid ""
 "del myList[0]\n"
 "print(myList)"
 msgstr ""
-"myList = [1024, 3, True, 6.5]\n"
-"myList.append(False)\n"
-"print(myList)\n"
-"myList.insert(2,4.5)\n"
-"print(myList)\n"
-"print(myList.pop())\n"
-"print(myList)\n"
-"print(myList.pop(1))\n"
-"print(myList)\n"
-"myList.pop(2)\n"
-"print(myList)\n"
-"myList.sort()\n"
-"print(myList)\n"
-"myList.reverse()\n"
-"print(myList)\n"
-"print(myList.count(6.5))\n"
-"print(myList.index(4.5))\n"
-"myList.remove(6.5)\n"
-"print(myList)\n"
-"del myList[0]\n"
-"print(myList)"
+"miLista = [1024, 3, True, 6.5]\n"
+"miLista.append(False)\n"
+"print(miLista)\n"
+"miLista.insert(2,4.5)\n"
+"print(miLista)\n"
+"print(miLista.pop())\n"
+"print(miLista)\n"
+"print(miLista.pop(1))\n"
+"print(miLista)\n"
+"miLista.pop(2)\n"
+"print(miLista)\n"
+"miLista.sort()\n"
+"print(miLista)\n"
+"miLista.reverse()\n"
+"print(miLista)\n"
+"print(miLista.count(6.5))\n"
+"print(miLista.index(4.5))\n"
+"miLista.remove(6.5)\n"
+"print(miLista)\n"
+"del miLista[0]\n"
+"print(miLista)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:280
 msgid ""
@@ -842,8 +842,8 @@ msgstr ""
 "específico. El intervalo de índices que comienza a partir de 0 se "
 "utiliza de nuevo para estos métodos. También debe notar la notación "
 "familiar de \"punto\" para pedir a un objeto que invoque un método. `` "
-"MyList.append (False) `` puede ser leído como \"pida al objeto` "
-"`myList`` que realice su método` `append`` y envíenle el valor` "
+"miLista.append (False) `` puede ser leído como \"pida al objeto` "
+"`miLista`` que realice su método` `append`` y envíenle el valor` "
 "`False``. Incluso objetos de datos simples como Los enteros pueden "
 "invocar métodos de esta manera."
 
@@ -961,12 +961,12 @@ msgid ""
 msgstr ""
 ">>> \"David\"\n"
 "'David'\n"
-">>> myName = \"David\"\n"
-">>> myName[3]\n"
+">>> miNombre = \"David\"\n"
+">>> miNombre[3]\n"
 "'i'\n"
-">>> myName*2\n"
+">>> miNombre*2\n"
 "'DavidDavid'\n"
-">>> len(myName)\n"
+">>> len(miNombre)\n"
 "5\n"
 ">>>"
 
@@ -995,15 +995,15 @@ msgid ""
 ">>> myName.split('v')\n"
 "['Da', 'id']"
 msgstr ""
-">>> myName\n"
+">>> miNombre\n"
 "'David'\n"
-">>> myName.upper()\n"
+">>> miNombre.upper()\n"
 "'DAVID'\n"
-">>> myName.center(10)\n"
+">>> miNombre.center(10)\n"
 "'  David   '\n"
-">>> myName.find('v')\n"
+">>> miNombre.find('v')\n"
 "2\n"
-">>> myName.split('v')\n"
+">>> miNombre.split('v')\n"
 "['Da', 'id']"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:367
@@ -1031,7 +1031,7 @@ msgstr "``center``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:380
 msgid "``astring.center(w)``"
-msgstr "``astring.center(w)``"
+msgstr "``unacadena.center(w)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:380
 msgid "Returns a string centered in a field of size ``w``"
@@ -1039,7 +1039,7 @@ msgstr "Devuelve una cadena centrada en un campo de tamaño `` w``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:381
 msgid "``astring.count(item)``"
-msgstr "``astring.count(item)``"
+msgstr "``unacadena.count(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:381
 msgid "Returns the number of occurrences of ``item`` in the string"
@@ -1051,7 +1051,7 @@ msgstr "``ljust``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:382
 msgid "``astring.ljust(w)``"
-msgstr "``astring.ljust(w)``"
+msgstr "``unacadena.ljust(w)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:382
 msgid "Returns a string left-justified in a field of size ``w``"
@@ -1065,7 +1065,7 @@ msgstr "``lower``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:383
 msgid "``astring.lower()``"
-msgstr "``astring.lower()``"
+msgstr "``unacadena.lower()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:383
 msgid "Returns a string in all lowercase"
@@ -1077,7 +1077,7 @@ msgstr "``rjust``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:384
 msgid "``astring.rjust(w)``"
-msgstr "``astring.rjust(w)``"
+msgstr "``unacadena.rjust(w)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:384
 msgid "Returns a string right-justified in a field of size ``w``"
@@ -1090,7 +1090,7 @@ msgstr "``find``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:385
 msgid "``astring.find(item)``"
-msgstr "``astring.find(item)``"
+msgstr "``unacadena.find(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:386
 msgid "``split``"
@@ -1098,7 +1098,7 @@ msgstr "``split``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:386
 msgid "``astring.split(schar)``"
-msgstr "``astring.split(schar)``"
+msgstr "``unacadena.split(schar)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:386
 msgid "Splits a string into substrings at ``schar``"
@@ -1137,19 +1137,19 @@ msgid ""
 "TypeError: object doesn't support item assignment\n"
 ">>>"
 msgstr ""
-">>> myList\n"
+">>> miLista\n"
 "[1, 3, True, 6.5]\n"
-">>> myList[0]=2**10\n"
-">>> myList\n"
+">>> miLista[0]=2**10\n"
+">>> miLista\n"
 "[1024, 3, True, 6.5]\n"
 ">>>\n"
-">>> myName\n"
+">>> miNombre\n"
 "'David'\n"
-">>> myName[0]='X'\n"
+">>> miNombre[0]='X'\n"
 "\n"
 "Traceback (most recent call last):\n"
 "  File \"<pyshell#84>\", line 1, in -toplevel-\n"
-"    myName[0]='X'\n"
+"    miNombre[0]='X'\n"
 "TypeError: object doesn't support item assignment\n"
 ">>>"
 
@@ -1182,16 +1182,16 @@ msgid ""
 "(2, True)\n"
 ">>>"
 msgstr ""
-">>> myTuple = (2,True,4.96)\n"
-">>> myTuple\n"
+">>> miTupla = (2,True,4.96)\n"
+">>> miTupla\n"
 "(2, True, 4.96)\n"
-">>> len(myTuple)\n"
+">>> len(miTupla)\n"
 "3\n"
-">>> myTuple[0]\n"
+">>> miTupla[0]\n"
 "2\n"
-">>> myTuple * 3\n"
+">>> miTupla * 3\n"
 "(2, True, 4.96, 2, True, 4.96, 2, True, 4.96)\n"
-">>> myTuple[0:2]\n"
+">>> miTupla[0:2]\n"
 "(2, True)\n"
 ">>>"
 
@@ -1214,11 +1214,11 @@ msgid ""
 "TypeError: object doesn't support item assignment\n"
 ">>>"
 msgstr ""
-">>> myTuple[1]=False\n"
+">>> miTupla[1]=False\n"
 "\n"
 "Traceback (most recent call last):\n"
 "  File \"<pyshell#137>\", line 1, in -toplevel-\n"
-"    myTuple[1]=False\n"
+"    miTupla[1]=False\n"
 "TypeError: object doesn't support item assignment\n"
 ">>>"
 
@@ -1247,8 +1247,8 @@ msgid ""
 msgstr ""
 ">>> {3,6,\"cat\",4.5,False}\n"
 "{False, 4.5, 3, 6, 'cat'}\n"
-">>> mySet = {3,6,\"cat\",4.5,False}\n"
-">>> mySet\n"
+">>> miConjunto = {3,6,\"cat\",4.5,False}\n"
+">>> miConjunto\n"
 "{False, 4.5, 3, 6, 'cat'}\n"
 ">>>"
 
@@ -1282,7 +1282,7 @@ msgstr "``|``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:477
 msgid "``aset | otherset``"
-msgstr "``aset | otherset``"
+msgstr "``Conjunto1 | Conjunto2``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:477
 #: ../../_sources/Introduction/GettingStartedwithData.rst:509
@@ -1296,7 +1296,7 @@ msgstr "``&``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:478
 msgid "``aset & otherset``"
-msgstr "``aset & otherset``"
+msgstr "``Conjunto1 & Conjunto2``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:478
 #: ../../_sources/Introduction/GettingStartedwithData.rst:510
@@ -1311,7 +1311,7 @@ msgstr "``-``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:479
 msgid "``aset - otherset``"
-msgstr "``aset - otherset``"
+msgstr "``Conjunto1 - Conjunto2``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:479
 msgid "Returns a new set with all items from the first set not in second"
@@ -1325,7 +1325,7 @@ msgstr "``<=``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:480
 msgid "``aset <= otherset``"
-msgstr "``aset <= otherset``"
+msgstr "``Conjunto1 <= Conjunto2``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:480
 msgid "Asks whether all elements of  the first set are in the second"
@@ -1344,13 +1344,13 @@ msgid ""
 "False\n"
 ">>>"
 msgstr ""
-">>> mySet\n"
-"{False, 4.5, 3, 6, 'cat'}\n"
-">>> len(mySet)\n"
+">>> miConjunto\n"
+"{False, 4.5, 3, 6, 'gato'}\n"
+">>> len(miConjunto)\n"
 "5\n"
-">>> False in mySet\n"
+">>> False in miConjunto\n"
 "True\n"
-">>> \"dog\" in mySet\n"
+">>> \"perro\" in miConjunto\n"
 "False\n"
 ">>>"
 
@@ -1379,7 +1379,7 @@ msgstr "``union``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:509
 msgid "``aset.union(otherset)``"
-msgstr "``aset.union(otherset)``"
+msgstr "``Conjunto1.union(Conjunto2)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:510
 msgid "``intersection``"
@@ -1387,7 +1387,7 @@ msgstr "``intersection``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:510
 msgid "``aset.intersection(otherset)``"
-msgstr "``aset.intersection(otherset)``"
+msgstr "``Conjunto1.intersection(Conjunto2)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:511
 msgid "``difference``"
@@ -1395,7 +1395,7 @@ msgstr "``difference``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:511
 msgid "``aset.difference(otherset)``"
-msgstr "``aset.difference(otherset)``"
+msgstr "``Conjunto1.difference(Conjunto2)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:511
 msgid "Returns a new set with all items from first set not in second"
@@ -1409,7 +1409,7 @@ msgstr "``issubset``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:512
 msgid "``aset.issubset(otherset)``"
-msgstr "``aset.issubset(otherset)``"
+msgstr "``Conjunto1.issubset(Conjunto2)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:512
 msgid "Asks whether all elements of one set are in the other"
@@ -1421,7 +1421,7 @@ msgstr "``add``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:513
 msgid "``aset.add(item)``"
-msgstr "``aset.add(item)``"
+msgstr "``Conjunto1add(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:513
 msgid "Adds item to the set"
@@ -1429,7 +1429,7 @@ msgstr "Añade un elemento al conjunto"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:514
 msgid "``aset.remove(item)``"
-msgstr ""
+msgstr "``Conjunto1.remove(item)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:514
 msgid "Removes item from the set"
@@ -1437,7 +1437,7 @@ msgstr "Elimina el elemento del conjunto"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:515
 msgid "``aset.pop()``"
-msgstr "``aset.pop()``"
+msgstr "``Conjunto1.pop()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:515
 msgid "Removes an arbitrary element from the set"
@@ -1449,7 +1449,7 @@ msgstr "``clear``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:516
 msgid "``aset.clear()``"
-msgstr "``aset.clear()``"
+msgstr "``Conjunto1.clear()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:516
 msgid "Removes all elements from the set"
@@ -1491,37 +1491,37 @@ msgid ""
 "set()\n"
 ">>>"
 msgstr ""
-">>> mySet\n"
-"{False, 4.5, 3, 6, 'cat'}\n"
-">>> yourSet = {99,3,100}\n"
-">>> mySet.union(yourSet)\n"
-"{False, 4.5, 3, 100, 6, 'cat', 99}\n"
-">>> mySet | yourSet\n"
-"{False, 4.5, 3, 100, 6, 'cat', 99}\n"
-">>> mySet.intersection(yourSet)\n"
+">>> miConjunto\n"
+"{False, 4.5, 3, 6, 'gato'}\n"
+">>> tuConjunto = {99,3,100}\n"
+">>> miConjunto.union(tuConjunto)\n"
+"{False, 4.5, 3, 100, 6, 'gato', 99}\n"
+">>> miConjunto | tuConjunto\n"
+"{False, 4.5, 3, 100, 6, 'gato', 99}\n"
+">>> miConjunto.intersection(tuConjunto)\n"
 "{3}\n"
-">>> mySet & yourSet\n"
+">>> miConjunto & tuConjunto\n"
 "{3}\n"
-">>> mySet.difference(yourSet)\n"
-"{False, 4.5, 6, 'cat'}\n"
-">>> mySet - yourSet\n"
-"{False, 4.5, 6, 'cat'}\n"
-">>> {3,100}.issubset(yourSet)\n"
+">>> miConjunto.difference(tuConjunto)\n"
+"{False, 4.5, 6, 'gato'}\n"
+">>> miConjunto - tuConjunto\n"
+"{False, 4.5, 6, 'gato'}\n"
+">>> {3,100}.issubset(tuConjunto)\n"
 "True\n"
-">>> {3,100}<=yourSet\n"
+">>> {3,100}<=tuConjunto\n"
 "True\n"
-">>> mySet.add(\"house\")\n"
-">>> mySet\n"
-"{False, 4.5, 3, 6, 'house', 'cat'}\n"
-">>> mySet.remove(4.5)\n"
-">>> mySet\n"
-"{False, 3, 6, 'house', 'cat'}\n"
-">>> mySet.pop()\n"
+">>> miConjunto.add(\"casa\")\n"
+">>> miConjunto\n"
+"{False, 4.5, 3, 6, 'casa', 'gato'}\n"
+">>> miConjunto.remove(4.5)\n"
+">>> miConjunto\n"
+"{False, 3, 6, 'casa', 'gato'}\n"
+">>> miConjunto.pop()\n"
 "False\n"
-">>> mySet\n"
-"{3, 6, 'house', 'cat'}\n"
-">>> mySet.clear()\n"
-">>> mySet\n"
+">>> miConjunto\n"
+"{3, 6, 'casa', 'gato'}\n"
+">>> miConjunto.clear()\n"
+">>> miConjunto\n"
 "set()\n"
 ">>>"
 
@@ -1547,8 +1547,8 @@ msgid ""
 "{'Wisconsin': 'Madison', 'Iowa': 'DesMoines'}\n"
 ">>>"
 msgstr ""
-">>> capitals = {'Iowa':'DesMoines','Wisconsin':'Madison'}\n"
-">>> capitals\n"
+">>> capitales = {'Iowa':'DesMoines','Wisconsin':'Madison'}\n"
+">>> capitales\n"
 "{'Wisconsin': 'Madison', 'Iowa': 'DesMoines'}\n"
 ">>>"
 
@@ -1580,14 +1580,14 @@ msgid ""
 "for k in capitals:\n"
 "   print(capitals[k],\" is the capital of \", k)"
 msgstr ""
-"capitals = {'Iowa':'DesMoines','Wisconsin':'Madison'}\n"
-"print(capitals['Iowa'])\n"
-"capitals['Utah']='SaltLakeCity'\n"
-"print(capitals)\n"
-"capitals['California']='Sacramento'\n"
-"print(len(capitals))\n"
-"for k in capitals:\n"
-"   print(capitals[k],\" is the capital of \", k)"
+"capitales = {'Iowa':'DesMoines','Wisconsin':'Madison'}\n"
+"print(capitales['Iowa'])\n"
+"capitales['Utah']='SaltLakeCity'\n"
+"print(capitales)\n"
+"capitales['California']='Sacramento'\n"
+"print(len(capitales))\n"
+"for k in capitales:\n"
+"   print(capitales[k],\" es la capital de\", k)"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:586
 msgid ""
@@ -1641,7 +1641,7 @@ msgstr "``[]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:610
 msgid "``myDict[k]``"
-msgstr "``myDict[k]``"
+msgstr "``miDiccionario[k]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:610
 msgid "Returns the value associated with ``k``, otherwise its an error"
@@ -1654,7 +1654,7 @@ msgstr "``in``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:611
 msgid "``key in adict``"
-msgstr "``key in adict``"
+msgstr "``key in unDiccionario``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:611
 msgid "Returns ``True`` if key is in the   dictionary, ``False`` otherwise"
@@ -1664,7 +1664,7 @@ msgstr ""
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:612
 msgid "del ``adict[key]``"
-msgstr "del ``adict[key]``"
+msgstr "del ``unDiccionario[key]``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:612
 msgid "Removes the entry from the  dictionary"
@@ -1692,23 +1692,23 @@ msgid ""
 "'NO ENTRY'\n"
 ">>>"
 msgstr ""
-">>> phoneext={'david':1410,'brad':1137}\n"
-">>> phoneext\n"
+">>> extension_telefono={'david':1410,'brad':1137}\n"
+">>> extension_telefono\n"
 "{'brad': 1137, 'david': 1410}\n"
-">>> phoneext.keys()\n"
+">>> extension_telefono.keys()\n"
 "dict_keys(['brad', 'david'])\n"
-">>> list(phoneext.keys())\n"
+">>> list(extension_telefono.keys())\n"
 "['brad', 'david']\n"
-">>> phoneext.values()\n"
+">>> extension_telefono.values()\n"
 "dict_values([1137, 1410])\n"
-">>> list(phoneext.values())\n"
+">>> list(extension_telefono.values())\n"
 "[1137, 1410]\n"
-">>> phoneext.items()\n"
+">>> extension_telefono.items()\n"
 "dict_items([('brad', 1137), ('david', 1410)])\n"
-">>> list(phoneext.items())\n"
+">>> list(extension_telefono.items())\n"
 "[('brad', 1137), ('david', 1410)]\n"
-">>> phoneext.get(\"kent\")\n"
-">>> phoneext.get(\"kent\",\"NO ENTRY\")\n"
+">>> extension_telefono.get(\"kent\")\n"
+">>> extension_telefono.get(\"kent\",\"NO ENTRY\")\n"
 "'NO ENTRY'\n"
 ">>>"
 
@@ -1722,7 +1722,7 @@ msgstr "``keys``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:646
 msgid "``adict.keys()``"
-msgstr "``adict.keys()``"
+msgstr "``unDiccionario.keys()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:646
 msgid "Returns the keys of the dictionary in a dict_keys object"
@@ -1734,7 +1734,7 @@ msgstr "``values``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:647
 msgid "``adict.values()``"
-msgstr "``adict.values()``"
+msgstr "``unDiccionario.values()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:647
 msgid "Returns the values of the dictionary in a dict_values object"
@@ -1746,7 +1746,7 @@ msgstr "``items``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:648
 msgid "``adict.items()``"
-msgstr "``adict.items()``"
+msgstr "``unDiccionario.items()``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:648
 msgid "Returns the key-value pairs in a dict_items object"
@@ -1759,7 +1759,7 @@ msgstr "``get``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:649
 msgid "``adict.get(k)``"
-msgstr "``adict.get(k)``"
+msgstr "``unDiccionario.get(k)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:649
 msgid "Returns the value associated with ``k``, ``None`` otherwise"
@@ -1767,11 +1767,11 @@ msgstr "Devuelve el valor asociado con `` k``, `` None`` de lo contrario"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:650
 msgid "``adict.get(k,alt)``"
-msgstr "``adict.get(k,alt)``"
+msgstr "``unDiccionario.get(k,alt)``"
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:650
 msgid "Returns the value associated with ``k``, ``alt`` otherwise"
-msgstr ""
+msgstr "Devuelve el valor asociado con `` k``, `` alt`` de lo contrario"
 
 # Carlos Sisek
 # carlos.sisek@gmail.com
@@ -1788,4 +1788,4 @@ msgstr ""
 
 #: ../../_sources/Introduction/GettingStartedwithData.rst:658
 msgid "\n"
-msgstr ""
+msgstr "\n"
