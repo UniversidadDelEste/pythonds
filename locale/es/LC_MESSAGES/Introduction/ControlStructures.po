@@ -4,7 +4,7 @@ msgstr ""
 "3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-01 14:03-0300\n"
-"PO-Revision-Date: 2017-05-06 12:26-0300\n"
+"PO-Revision-Date: 2017-05-06 14:11-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -419,7 +419,8 @@ msgstr ""
 
 #: ../../_sources/Introduction/ControlStructures.rst:200
 msgid "# the answer is: ['c', 'a', 't', 'd', 'o', 'g', 'r', 'b', 'i']"
-msgstr "# la respuesta es: ['c', 'a', 't', 'd', 'o', 'g', 'r', 'b', 'i']"
+msgstr ""
+"# la respuesta es: ['g', 'a', 't', 'o', 'p', 'e', 'r', 'c', 'n', 'j']"
 
 msgid ""
 "<div id=\"list_unique\" class=\"video_popup\" >\n"
@@ -594,8 +595,8 @@ msgid ""
 "# the answer is: ['c', 'a', 't', 'd', 'o', 'g', 'r', 'a', 'b', 'b', 'i', "
 "'t']"
 msgstr ""
-"# la respuesta es: ['c', 'a', 't', 'd', 'o', 'g', 'r', 'a', 'b', 'b', "
-"'i', 't']"
+"# la respuesta es: ['g', 'a', 't', 'o', 'p', 'e', 'r', 'r', 'o', 'c', "
+"'o', 'n', 'e', 'j', 'o']"
 
 # Carlos Sisek
 # carlos.sisek@gmail.com
